@@ -1870,7 +1870,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/italo/esp/projetos/teste_servo_2 -B/home/italo/esp/projetos/teste_servo_2/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/italo/esp/projetos/sde -B/home/italo/esp/projetos/sde/build
   description = Re-running CMake...
   generator = 1
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/italo/esp/projetos/teste_servo_2/main
+# Install script for directory: /home/italo/esp/projetos/sde/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

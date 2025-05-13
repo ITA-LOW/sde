@@ -1,4 +1,4 @@
-# Install script for directory: /home/italo/esp/projetos/teste_servo_2/components/sonar
+# Install script for directory: /home/italo/esp/projetos/sde/components/sonar
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

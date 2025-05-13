@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/italo/esp/projetos/teste_servo_2/build/esp-idf/esp_system/port/soc/esp32/cmake_install.cmake")
+  include("/home/italo/esp/projetos/sde/build/esp-idf/esp_system/port/soc/esp32/cmake_install.cmake")
 endif()
 
