@@ -1,0 +1,9 @@
+idf.py -p /dev/ttyUSB0 monitor | tee esp_log.txt
+
+
+pip install plotly streamlit
+
+python main.py
+
+streamlit run app.py
+
