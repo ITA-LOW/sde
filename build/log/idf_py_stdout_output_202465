@@ -1,0 +1,1879 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 12 2025 17:22:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a78ch ( 42892) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001a7b4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001a7d8 vaddr=3ffb0000 size=023c4h (  9156) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001cba4 vaddr=40080000 size=03474h ( 13428) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15a20h ( 88608) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035a48 vaddr=40083474 size=0997ch ( 39292) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     teste_servo[0m
+[0;32mI (199) app_init: App version:      1[0m
+[0;32mI (202) app_init: Compile time:     May 12 2025 17:22:02[0m
+[0;32mI (207) app_init: ELF file SHA256:  576692118...[0m
+[0;32mI (212) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (216) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (220) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (224) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (228) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (234) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFB2CE0 len 0002D320 (180 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (255) heap_init: At 4008CDF0 len 00013210 (76 KiB): IRAM[0m
+[0;32mI (262) spi_flash: detected chip: generic[0m
+[0;32mI (264) spi_flash: flash io: dio[0m
+[0;33mW (267) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) MAIN: Inicializando...[0m
+[0;32mI (290) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (500) MAIN: Angle: 0°, Dist: 90.19 cm[0m
+[0;32mI (700) MAIN: Angle: 1°, Dist: 90.36 cm[0m
+[0;32mI (900) MAIN: Angle: 2°, Dist: 90.26 cm[0m
+[0;32mI (1100) MAIN: Angle: 3°, Dist: 90.84 cm[0m
+[0;32mI (1300) MAIN: Angle: 4°, Dist: 90.53 cm[0m
+[0;32mI (1500) MAIN: Angle: 5°, Dist: 90.52 cm[0m
+[0;32mI (1700) MAIN: Angle: 6°, Dist: 91.44 cm[0m
+[0;32mI (1900) MAIN: Angle: 7°, Dist: 91.15 cm[0m
+[0;32mI (2100) MAIN: Angle: 8°, Dist: 91.68 cm[0m
+[0;32mI (2300) MAIN: Angle: 9°, Dist: 91.50 cm[0m
+[0;32mI (2500) MAIN: Angle: 10°, Dist: 91.72 cm[0m
+[0;32mI (2700) MAIN: Angle: 11°, Dist: 92.63 cm[0m
+[0;32mI (2900) MAIN: Angle: 12°, Dist: 93.07 cm[0m
+[0;32mI (3100) MAIN: Angle: 13°, Dist: 92.88 cm[0m
+[0;32mI (3300) MAIN: Angle: 14°, Dist: 93.64 cm[0m
+[0;32mI (3500) MAIN: Angle: 15°, Dist: 93.28 cm[0m
+[0;32mI (3700) MAIN: Angle: 16°, Dist: 93.48 cm[0m
+[0;32mI (3900) MAIN: Angle: 17°, Dist: 93.88 cm[0m
+[0;32mI (4100) MAIN: Angle: 18°, Dist: 94.41 cm[0m
+[0;32mI (4300) MAIN: Angle: 19°, Dist: 95.23 cm[0m
+[0;32mI (4500) MAIN: Angle: 20°, Dist: 95.71 cm[0m
+[0;32mI (4700) MAIN: Angle: 21°, Dist: 95.63 cm[0m
+[0;32mI (4900) MAIN: Angle: 22°, Dist: 96.50 cm[0m
+[0;32mI (5100) MAIN: Angle: 23°, Dist: 96.35 cm[0m
+[0;32mI (5300) MAIN: Angle: 24°, Dist: 97.38 cm[0m
+[0;32mI (5500) MAIN: Angle: 25°, Dist: 97.62 cm[0m
+[0;32mI (5700) MAIN: Angle: 26°, Dist: 97.63 cm[0m
+[0;32mI (5900) MAIN: Angle: 27°, Dist: 98.39 cm[0m
+[0;32mI (6100) MAIN: Angle: 28°, Dist: 98.53 cm[0m
+[0;32mI (6300) MAIN: Angle: 29°, Dist: 98.92 cm[0m
+[0;32mI (6500) MAIN: Angle: 30°, Dist: 99.97 cm[0m
+[0;32mI (6700) MAIN: Angle: 31°, Dist: 100.16 cm[0m
+[0;32mI (6900) MAIN: Angle: 32°, Dist: 100.41 cm[0m
+[0;32mI (7100) MAIN: Angle: 33°, Dist: 100.69 cm[0m
+[0;32mI (7300) MAIN: Angle: 34°, Dist: 101.65 cm[0m
+[0;32mI (7500) MAIN: Angle: 35°, Dist: 102.71 cm[0m
+[0;32mI (7700) MAIN: Angle: 36°, Dist: 102.92 cm[0m
+[0;32mI (7900) MAIN: Angle: 37°, Dist: 102.85 cm[0m
+[0;32mI (8100) MAIN: Angle: 38°, Dist: 103.28 cm[0m
+[0;32mI (8300) MAIN: Angle: 39°, Dist: 103.19 cm[0m
+[0;32mI (8500) MAIN: Angle: 40°, Dist: 103.74 cm[0m
+[0;32mI (8700) MAIN: Angle: 41°, Dist: 104.32 cm[0m
+[0;32mI (8900) MAIN: Angle: 42°, Dist: 104.48 cm[0m
+[0;32mI (9100) MAIN: Angle: 43°, Dist: 104.86 cm[0m
+[0;32mI (9300) MAIN: Angle: 44°, Dist: 105.92 cm[0m
+[0;32mI (9500) MAIN: Angle: 45°, Dist: 107.05 cm[0m
+[0;32mI (9700) MAIN: Angle: 46°, Dist: 106.93 cm[0m
+[0;32mI (9900) MAIN: Angle: 47°, Dist: 107.39 cm[0m
+[0;32mI (10100) MAIN: Angle: 48°, Dist: 107.62 cm[0m
+[0;32mI (10300) MAIN: Angle: 49°, Dist: 108.08 cm[0m
+[0;32mI (10500) MAIN: Angle: 50°, Dist: 108.59 cm[0m
+[0;32mI (10700) MAIN: Angle: 51°, Dist: 109.37 cm[0m
+[0;32mI (10900) MAIN: Angle: 52°, Dist: 109.64 cm[0m
+[0;32mI (11100) MAIN: Angle: 53°, Dist: 110.31 cm[0m
+[0;32mI (11300) MAIN: Angle: 54°, Dist: 110.67 cm[0m
+[0;32mI (11500) MAIN: Angle: 55°, Dist: 110.51 cm[0m
+[0;32mI (11700) MAIN: Angle: 56°, Dist: 111.29 cm[0m
+[0;32mI (11900) MAIN: Angle: 57°, Dist: 111.58 cm[0m
+[0;32mI (12100) MAIN: Angle: 58°, Dist: 111.84 cm[0m
+[0;32mI (12300) MAIN: Angle: 59°, Dist: 111.61 cm[0m
+[0;32mI (12500) MAIN: Angle: 60°, Dist: 112.80 cm[0m
+[0;32mI (12700) MAIN: Angle: 61°, Dist: 113.00 cm[0m
+[0;32mI (12900) MAIN: Angle: 62°, Dist: 113.28 cm[0m
+[0;32mI (13100) MAIN: Angle: 63°, Dist: 113.04 cm[0m
+[0;32mI (13300) MAIN: Angle: 64°, Dist: 113.70 cm[0m
+[0;32mI (13500) MAIN: Angle: 65°, Dist: 113.43 cm[0m
+[0;32mI (13700) MAIN: Angle: 66°, Dist: 114.27 cm[0m
+[0;32mI (13900) MAIN: Angle: 67°, Dist: 114.20 cm[0m
+[0;32mI (14100) MAIN: Angle: 68°, Dist: 114.39 cm[0m
+[0;32mI (14300) MAIN: Angle: 69°, Dist: 114.61 cm[0m
+[0;32mI (14500) MAIN: Angle: 70°, Dist: 115.37 cm[0m
+[0;32mI (14700) MAIN: Angle: 71°, Dist: 115.93 cm[0m
+[0;32mI (14900) MAIN: Angle: 72°, Dist: 115.52 cm[0m
+[0;32mI (15100) MAIN: Angle: 73°, Dist: 115.92 cm[0m
+[0;32mI (15300) MAIN: Angle: 74°, Dist: 116.50 cm[0m
+[0;32mI (15500) MAIN: Angle: 75°, Dist: 117.32 cm[0m
+[0;32mI (15700) MAIN: Angle: 76°, Dist: 117.51 cm[0m
+[0;32mI (15900) MAIN: Angle: 77°, Dist: 117.41 cm[0m
+[0;32mI (16100) MAIN: Angle: 78°, Dist: 117.44 cm[0m
+[0;32mI (16300) MAIN: Angle: 79°, Dist: 0.02 cm[0m
+[0;32mI (16500) MAIN: Angle: 80°, Dist: 0.02 cm[0m
+[0;32mI (16700) MAIN: Angle: 81°, Dist: 0.02 cm[0m
+[0;32mI (16900) MAIN: Angle: 82°, Dist: 94.65 cm[0m
+[0;32mI (17100) MAIN: Angle: 83°, Dist: 94.79 cm[0m
+[0;32mI (17300) MAIN: Angle: 84°, Dist: 0.02 cm[0m
+[0;32mI (17500) MAIN: Angle: 85°, Dist: 95.34 cm[0m
+[0;32mI (17700) MAIN: Angle: 86°, Dist: 94.87 cm[0m
+[0;32mI (17900) MAIN: Angle: 87°, Dist: 0.05 cm[0m
+[0;32mI (18100) MAIN: Angle: 88°, Dist: 95.56 cm[0m
+[0;32mI (18300) MAIN: Angle: 89°, Dist: 94.94 cm[0m
+[0;32mI (18500) MAIN: Angle: 90°, Dist: 94.53 cm[0m
+[0;32mI (18700) MAIN: Angle: 91°, Dist: 95.03 cm[0m
+[0;32mI (18900) MAIN: Angle: 92°, Dist: 0.03 cm[0m
+[0;32mI (19100) MAIN: Angle: 93°, Dist: 95.08 cm[0m
+[0;32mI (19300) MAIN: Angle: 94°, Dist: 94.82 cm[0m
+[0;32mI (19500) MAIN: Angle: 95°, Dist: 0.02 cm[0m
+[0;32mI (19700) MAIN: Angle: 96°, Dist: 94.38 cm[0m
+[0;32mI (19900) MAIN: Angle: 97°, Dist: 95.51 cm[0m
+[0;32mI (20100) MAIN: Angle: 98°, Dist: 93.90 cm[0m
+[0;32mI (20300) MAIN: Angle: 99°, Dist: 0.09 cm[0m
+[0;32mI (20500) MAIN: Angle: 100°, Dist: 0.03 cm[0m
+[0;32mI (20700) MAIN: Angle: 101°, Dist: 0.02 cm[0m
+[0;32mI (20900) MAIN: Angle: 102°, Dist: 0.02 cm[0m
+[0;32mI (21100) MAIN: Angle: 103°, Dist: 0.05 cm[0m
+[0;32mI (21300) MAIN: Angle: 104°, Dist: 0.02 cm[0m
+[0;32mI (21500) MAIN: Angle: 105°, Dist: 0.07 cm[0m
+[0;32mI (21700) MAIN: Angle: 106°, Dist: 0.02 cm[0m
+[0;32mI (21900) MAIN: Angle: 107°, Dist: 0.10 cm[0m
+[0;32mI (22100) MAIN: Angle: 108°, Dist: 0.02 cm[0m
+[0;32mI (22300) MAIN: Angle: 109°, Dist: 0.09 cm[0m
+[0;32mI (22500) MAIN: Angle: 110°, Dist: 0.09 cm[0m
+[0;32mI (22700) MAIN: Angle: 111°, Dist: 0.09 cm[0m
+[0;32mI (22900) MAIN: Angle: 112°, Dist: 0.02 cm[0m
+[0;32mI (23100) MAIN: Angle: 113°, Dist: 121.83 cm[0m
+[0;32mI (23300) MAIN: Angle: 114°, Dist: 0.03 cm[0m
+[0;32mI (23500) MAIN: Angle: 115°, Dist: 0.05 cm[0m
+[0;32mI (23700) MAIN: Angle: 116°, Dist: 120.27 cm[0m
+[0;32mI (23900) MAIN: Angle: 117°, Dist: 0.02 cm[0m
+[0;32mI (24100) MAIN: Angle: 118°, Dist: 0.02 cm[0m
+[0;32mI (24300) MAIN: Angle: 119°, Dist: 120.43 cm[0m
+[0;32mI (24500) MAIN: Angle: 120°, Dist: 0.02 cm[0m
+[0;32mI (24700) MAIN: Angle: 121°, Dist: 122.42 cm[0m
+[0;32mI (24900) MAIN: Angle: 122°, Dist: 0.02 cm[0m
+[0;32mI (25100) MAIN: Angle: 123°, Dist: 0.02 cm[0m
+[0;32mI (25300) MAIN: Angle: 124°, Dist: 0.07 cm[0m
+[0;32mI (25500) MAIN: Angle: 125°, Dist: 0.07 cm[0m
+[0;32mI (25700) MAIN: Angle: 126°, Dist: 0.02 cm[0m
+[0;32mI (25900) MAIN: Angle: 127°, Dist: 0.05 cm[0m
+[0;32mI (26100) MAIN: Angle: 128°, Dist: 122.06 cm[0m
+[0;32mI (26310) MAIN: Angle: 129°, Dist: 5.23 cm[0m
+[0;32mI (26510) MAIN: Angle: 130°, Dist: 8.52 cm[0m
+[0;32mI (26710) MAIN: Angle: 131°, Dist: 10.00 cm[0m
+[0;32mI (26910) MAIN: Angle: 132°, Dist: 11.92 cm[0m
+[0;32mI (27110) MAIN: Angle: 133°, Dist: 13.57 cm[0m
+[0;32mI (27310) MAIN: Angle: 134°, Dist: 14.15 cm[0m
+[0;32mI (27510) MAIN: Angle: 135°, Dist: 16.02 cm[0m
+[0;32mI (27710) MAIN: Angle: 136°, Dist: 15.66 cm[0m
+[0;32mI (27910) MAIN: Angle: 137°, Dist: 17.85 cm[0m
+[0;32mI (28110) MAIN: Angle: 138°, Dist: 17.53 cm[0m
+[0;32mI (28310) MAIN: Angle: 139°, Dist: 20.07 cm[0m
+[0;32mI (28510) MAIN: Angle: 140°, Dist: 20.61 cm[0m
+[0;32mI (28710) MAIN: Angle: 141°, Dist: 21.87 cm[0m
+[0;32mI (28910) MAIN: Angle: 142°, Dist: 23.07 cm[0m
+[0;32mI (29110) MAIN: Angle: 143°, Dist: 25.06 cm[0m
+[0;32mI (29310) MAIN: Angle: 144°, Dist: 25.88 cm[0m
+[0;32mI (29510) MAIN: Angle: 145°, Dist: 27.51 cm[0m
+[0;32mI (29710) MAIN: Angle: 146°, Dist: 28.33 cm[0m
+[0;32mI (29910) MAIN: Angle: 147°, Dist: 29.86 cm[0m
+[0;32mI (30110) MAIN: Angle: 148°, Dist: 30.30 cm[0m
+[0;32mI (30310) MAIN: Angle: 149°, Dist: 31.35 cm[0m
+[0;32mI (30510) MAIN: Angle: 150°, Dist: 33.08 cm[0m
+[0;32mI (30710) MAIN: Angle: 151°, Dist: 34.64 cm[0m
+[0;32mI (30910) MAIN: Angle: 152°, Dist: 35.64 cm[0m
+[0;32mI (31110) MAIN: Angle: 153°, Dist: 34.71 cm[0m
+[0;32mI (31310) MAIN: Angle: 154°, Dist: 28.59 cm[0m
+[0;32mI (31510) MAIN: Angle: 155°, Dist: 36.14 cm[0m
+[0;32mI (31710) MAIN: Angle: 156°, Dist: 34.27 cm[0m
+[0;32mI (31910) MAIN: Angle: 157°, Dist: 39.08 cm[0m
+[0;32mI (32110) MAIN: Angle: 158°, Dist: 39.15 cm[0m
+[0;32mI (32310) MAIN: Angle: 159°, Dist: 40.34 cm[0m
+[0;32mI (32510) MAIN: Angle: 160°, Dist: 41.37 cm[0m
+[0;32mI (32710) MAIN: Angle: 161°, Dist: 41.18 cm[0m
+[0;32mI (32910) MAIN: Angle: 162°, Dist: 42.00 cm[0m
+[0;32mI (33110) MAIN: Angle: 163°, Dist: 43.51 cm[0m
+[0;32mI (33310) MAIN: Angle: 164°, Dist: 44.45 cm[0m
+[0;32mI (33510) MAIN: Angle: 165°, Dist: 45.50 cm[0m
+[0;32mI (33710) MAIN: Angle: 166°, Dist: 45.74 cm[0m
+[0;32mI (33910) MAIN: Angle: 167°, Dist: 46.96 cm[0m
+[0;32mI (34110) MAIN: Angle: 168°, Dist: 42.03 cm[0m
+[0;32mI (34310) MAIN: Angle: 169°, Dist: 41.83 cm[0m
+[0;32mI (34510) MAIN: Angle: 170°, Dist: 42.89 cm[0m
+[0;32mI (34710) MAIN: Angle: 171°, Dist: 44.28 cm[0m
+[0;32mI (34910) MAIN: Angle: 172°, Dist: 45.14 cm[0m
+[0;32mI (35110) MAIN: Angle: 173°, Dist: 45.82 cm[0m
+[0;32mI (35310) MAIN: Angle: 174°, Dist: 46.25 cm[0m
+[0;32mI (35510) MAIN: Angle: 175°, Dist: 46.91 cm[0m
+[0;32mI (35710) MAIN: Angle: 176°, Dist: 47.68 cm[0m
+[0;32mI (35910) MAIN: Angle: 177°, Dist: 46.82 cm[0m
+[0;32mI (36110) MAIN: Angle: 178°, Dist: 49.67 cm[0m
+[0;32mI (36310) MAIN: Angle: 179°, Dist: 50.11 cm[0m
+[0;32mI (36510) MAIN: Angle: 180°, Dist: 51.60 cm[0m
+[0;32mI (36710) MAIN: Angle: 179°, Dist: 52.79 cm[0m
+[0;32mI (36910) MAIN: Angle: 178°, Dist: 54.02 cm[0m
+[0;32mI (37110) MAIN: Angle: 177°, Dist: 54.62 cm[0m
+[0;32mI (37310) MAIN: Angle: 176°, Dist: 66.16 cm[0m
+[0;32mI (37510) MAIN: Angle: 175°, Dist: 63.83 cm[0m
+[0;32mI (37710) MAIN: Angle: 174°, Dist: 64.06 cm[0m
+[0;32mI (37910) MAIN: Angle: 173°, Dist: 65.41 cm[0m
+[0;32mI (38110) MAIN: Angle: 172°, Dist: 65.98 cm[0m
+[0;32mI (38310) MAIN: Angle: 171°, Dist: 68.60 cm[0m
+[0;32mI (38510) MAIN: Angle: 170°, Dist: 60.99 cm[0m
+[0;32mI (38710) MAIN: Angle: 169°, Dist: 61.55 cm[0m
+[0;32mI (38910) MAIN: Angle: 168°, Dist: 62.73 cm[0m
+[0;32mI (39110) MAIN: Angle: 167°, Dist: 63.49 cm[0m
+[0;32mI (39310) MAIN: Angle: 166°, Dist: 64.84 cm[0m
+[0;32mI (39510) MAIN: Angle: 165°, Dist: 65.65 cm[0m
+[0;32mI (39710) MAIN: Angle: 164°, Dist: 66.70 cm[0m
+[0;32mI (39910) MAIN: Angle: 163°, Dist: 68.02 cm[0m
+[0;32mI (40110) MAIN: Angle: 162°, Dist: 69.15 cm[0m
+[0;32mI (40310) MAIN: Angle: 161°, Dist: 69.83 cm[0m
+[0;32mI (40510) MAIN: Angle: 160°, Dist: 71.10 cm[0m
+[0;32mI (40710) MAIN: Angle: 159°, Dist: 72.29 cm[0m
+[0;32mI (40910) MAIN: Angle: 158°, Dist: 73.32 cm[0m
+[0;32mI (41110) MAIN: Angle: 157°, Dist: 73.66 cm[0m
+[0;32mI (41310) MAIN: Angle: 156°, Dist: 75.60 cm[0m
+[0;32mI (41510) MAIN: Angle: 155°, Dist: 75.77 cm[0m
+[0;32mI (41710) MAIN: Angle: 154°, Dist: 72.48 cm[0m
+[0;32mI (41910) MAIN: Angle: 153°, Dist: 73.50 cm[0m
+[0;32mI (42110) MAIN: Angle: 152°, Dist: 74.65 cm[0m
+[0;32mI (42310) MAIN: Angle: 151°, Dist: 76.52 cm[0m
+[0;32mI (42510) MAIN: Angle: 150°, Dist: 77.76 cm[0m
+[0;32mI (42710) MAIN: Angle: 149°, Dist: 79.30 cm[0m
+[0;32mI (42910) MAIN: Angle: 148°, Dist: 84.96 cm[0m
+[0;32mI (43110) MAIN: Angle: 147°, Dist: 87.91 cm[0m
+[0;32mI (43310) MAIN: Angle: 146°, Dist: 89.23 cm[0m
+[0;32mI (43510) MAIN: Angle: 145°, Dist: 90.96 cm[0m
+[0;32mI (43710) MAIN: Angle: 144°, Dist: 92.37 cm[0m
+[0;32mI (43910) MAIN: Angle: 143°, Dist: 94.36 cm[0m
+[0;32mI (44110) MAIN: Angle: 142°, Dist: 95.17 cm[0m
+[0;32mI (44310) MAIN: Angle: 141°, Dist: 97.15 cm[0m
+[0;32mI (44510) MAIN: Angle: 140°, Dist: 98.66 cm[0m
+[0;32mI (44710) MAIN: Angle: 139°, Dist: 99.86 cm[0m
+[0;32mI (44910) MAIN: Angle: 138°, Dist: 101.10 cm[0m
+[0;32mI (45110) MAIN: Angle: 137°, Dist: 102.33 cm[0m
+[0;32mI (45310) MAIN: Angle: 136°, Dist: 104.68 cm[0m
+[0;32mI (45510) MAIN: Angle: 135°, Dist: 103.74 cm[0m
+[0;32mI (45710) MAIN: Angle: 134°, Dist: 108.27 cm[0m
+[0;32mI (45910) MAIN: Angle: 133°, Dist: 110.39 cm[0m
+[0;32mI (46110) MAIN: Angle: 132°, Dist: 109.02 cm[0m
+[0;32mI (46310) MAIN: Angle: 131°, Dist: 111.84 cm[0m
+[0;32mI (46510) MAIN: Angle: 130°, Dist: 114.03 cm[0m
+[0;32mI (46710) MAIN: Angle: 129°, Dist: 115.83 cm[0m
+[0;32mI (46910) MAIN: Angle: 128°, Dist: 117.20 cm[0m
+[0;32mI (47110) MAIN: Angle: 127°, Dist: 120.15 cm[0m
+[0;32mI (47310) MAIN: Angle: 126°, Dist: 121.76 cm[0m
+[0;32mI (47510) MAIN: Angle: 125°, Dist: 0.05 cm[0m
+[0;32mI (47710) MAIN: Angle: 124°, Dist: 0.03 cm[0m
+[0;32mI (47910) MAIN: Angle: 123°, Dist: 0.03 cm[0m
+[0;32mI (48110) MAIN: Angle: 122°, Dist: 120.79 cm[0m
+[0;32mI (48310) MAIN: Angle: 121°, Dist: 0.03 cm[0m
+[0;32mI (48510) MAIN: Angle: 120°, Dist: 0.02 cm[0m
+[0;32mI (48710) MAIN: Angle: 119°, Dist: 0.02 cm[0m
+[0;32mI (48910) MAIN: Angle: 118°, Dist: 121.06 cm[0m
+[0;32mI (49110) MAIN: Angle: 117°, Dist: 0.02 cm[0m
+[0;32mI (49310) MAIN: Angle: 116°, Dist: 0.03 cm[0m
+[0;32mI (49510) MAIN: Angle: 115°, Dist: 0.10 cm[0m
+[0;32mI (49710) MAIN: Angle: 114°, Dist: 0.02 cm[0m
+[0;32mI (49910) MAIN: Angle: 113°, Dist: 0.02 cm[0m
+[0;32mI (50110) MAIN: Angle: 112°, Dist: 121.04 cm[0m
+[0;32mI (50310) MAIN: Angle: 111°, Dist: 121.82 cm[0m
+[0;32mI (50510) MAIN: Angle: 110°, Dist: 95.68 cm[0m
+[0;32mI (50710) MAIN: Angle: 109°, Dist: 0.09 cm[0m
+[0;32mI (50910) MAIN: Angle: 108°, Dist: 0.03 cm[0m
+[0;32mI (51110) MAIN: Angle: 107°, Dist: 0.05 cm[0m
+[0;32mI (51310) MAIN: Angle: 106°, Dist: 0.07 cm[0m
+[0;32mI (51510) MAIN: Angle: 105°, Dist: 0.02 cm[0m
+[0;32mI (51710) MAIN: Angle: 104°, Dist: 96.18 cm[0m
+[0;32mI (51910) MAIN: Angle: 103°, Dist: 0.03 cm[0m
+[0;32mI (52110) MAIN: Angle: 102°, Dist: 0.02 cm[0m
+[0;32mI (52310) MAIN: Angle: 101°, Dist: 0.05 cm[0m
+[0;32mI (52510) MAIN: Angle: 100°, Dist: 94.86 cm[0m
+[0;32mI (52730) MAIN: Angle: 99°, Dist: 94.75 cm[0m
+[0;32mI (52930) MAIN: Angle: 98°, Dist: 95.56 cm[0m
+[0;32mI (53130) MAIN: Angle: 97°, Dist: 95.85 cm[0m
+[0;32mI (53330) MAIN: Angle: 96°, Dist: 95.46 cm[0m
+[0;32mI (53530) MAIN: Angle: 95°, Dist: 94.50 cm[0m
+[0;32mI (53730) MAIN: Angle: 94°, Dist: 95.51 cm[0m
+[0;32mI (53930) MAIN: Angle: 93°, Dist: 95.18 cm[0m
+[0;32mI (54130) MAIN: Angle: 92°, Dist: 94.02 cm[0m
+[0;32mI (54330) MAIN: Angle: 91°, Dist: 94.74 cm[0m
+[0;32mI (54530) MAIN: Angle: 90°, Dist: 0.09 cm[0m
+[0;32mI (54730) MAIN: Angle: 89°, Dist: 94.60 cm[0m
+[0;32mI (54930) MAIN: Angle: 88°, Dist: 94.72 cm[0m
+[0;32mI (55130) MAIN: Angle: 87°, Dist: 0.07 cm[0m
+[0;32mI (55330) MAIN: Angle: 86°, Dist: 0.05 cm[0m
+[0;32mI (55530) MAIN: Angle: 85°, Dist: 95.34 cm[0m
+[0;32mI (55730) MAIN: Angle: 84°, Dist: 94.57 cm[0m
+[0;32mI (55930) MAIN: Angle: 83°, Dist: 116.05 cm[0m
+[0;32mI (56130) MAIN: Angle: 82°, Dist: 116.33 cm[0m
+[0;32mI (56330) MAIN: Angle: 81°, Dist: 116.38 cm[0m
+[0;32mI (56530) MAIN: Angle: 80°, Dist: 116.17 cm[0m
+[0;32mI (56730) MAIN: Angle: 79°, Dist: 116.40 cm[0m
+[0;32mI (56930) MAIN: Angle: 78°, Dist: 93.95 cm[0m
+[0;32mI (57130) MAIN: Angle: 77°, Dist: 93.48 cm[0m
+[0;32mI (57330) MAIN: Angle: 76°, Dist: 93.28 cm[0m
+[0;32mI (57530) MAIN: Angle: 75°, Dist: 93.64 cm[0m
+[0;32mI (57730) MAIN: Angle: 74°, Dist: 117.46 cm[0m
+[0;32mI (57930) MAIN: Angle: 73°, Dist: 117.07 cm[0m
+[0;32mI (58130) MAIN: Angle: 72°, Dist: 108.97 cm[0m
+[0;32mI (58330) MAIN: Angle: 71°, Dist: 91.80 cm[0m
+[0;32mI (58530) MAIN: Angle: 70°, Dist: 92.75 cm[0m
+[0;32mI (58730) MAIN: Angle: 69°, Dist: 91.56 cm[0m
+[0;32mI (58930) MAIN: Angle: 68°, Dist: 0.02 cm[0m
+[0;32mI (59130) MAIN: Angle: 67°, Dist: 0.05 cm[0m
+[0;32mI (59330) MAIN: Angle: 66°, Dist: 0.17 cm[0m
+[0;32mI (59530) MAIN: Angle: 65°, Dist: 0.02 cm[0m
+[0;32mI (59730) MAIN: Angle: 64°, Dist: 86.98 cm[0m
+[0;32mI (59930) MAIN: Angle: 63°, Dist: 0.05 cm[0m
+[0;32mI (60130) MAIN: Angle: 62°, Dist: 86.66 cm[0m
+[0;32mI (60330) MAIN: Angle: 61°, Dist: 0.05 cm[0m
+[0;32mI (60530) MAIN: Angle: 60°, Dist: 0.09 cm[0m
+[0;32mI (60730) MAIN: Angle: 59°, Dist: 0.09 cm[0m
+[0;32mI (60930) MAIN: Angle: 58°, Dist: 84.94 cm[0m
+[0;32mI (61130) MAIN: Angle: 57°, Dist: 0.03 cm[0m
+[0;32mI (61330) MAIN: Angle: 56°, Dist: 83.18 cm[0m
+[0;32mI (61530) MAIN: Angle: 55°, Dist: 83.23 cm[0m
+[0;32mI (61730) MAIN: Angle: 54°, Dist: 83.28 cm[0m
+[0;33mW (61960) SONAR: Echo start timeout[0m
+[0;32mI (61960) MAIN: Angle: 53°, Dist: -1.00 cm[0m
+[0;33mW (62190) SONAR: Echo start timeout[0m
+[0;32mI (62190) MAIN: Angle: 52°, Dist: -1.00 cm[0m
+[0;33mW (62420) SONAR: Echo start timeout[0m
+[0;32mI (62420) MAIN: Angle: 51°, Dist: -1.00 cm[0m
+[0;32mI (62620) MAIN: Angle: 50°, Dist: 7.10 cm[0m
+[0;32mI (62820) MAIN: Angle: 49°, Dist: 8.57 cm[0m
+[0;32mI (63020) MAIN: Angle: 48°, Dist: 2.06 cm[0m
+[0;32mI (63220) MAIN: Angle: 47°, Dist: 3.04 cm[0m
+[0;32mI (63430) MAIN: Angle: 46°, Dist: 86.71 cm[0m
+[0;32mI (63630) MAIN: Angle: 45°, Dist: 0.02 cm[0m
+[0;32mI (63830) MAIN: Angle: 44°, Dist: 0.02 cm[0m
+[0;32mI (64030) MAIN: Angle: 43°, Dist: 95.70 cm[0m
+[0;32mI (64230) MAIN: Angle: 42°, Dist: 92.40 cm[0m
+[0;32mI (64430) MAIN: Angle: 41°, Dist: 0.09 cm[0m
+[0;32mI (64630) MAIN: Angle: 40°, Dist: 93.38 cm[0m
+[0;32mI (64830) MAIN: Angle: 39°, Dist: 117.94 cm[0m
+[0;32mI (65030) MAIN: Angle: 38°, Dist: 92.49 cm[0m
+[0;32mI (65230) MAIN: Angle: 37°, Dist: 91.89 cm[0m
+[0;32mI (65430) MAIN: Angle: 36°, Dist: 92.34 cm[0m
+[0;32mI (65630) MAIN: Angle: 35°, Dist: 118.13 cm[0m
+[0;32mI (65830) MAIN: Angle: 34°, Dist: 117.51 cm[0m
+[0;32mI (66030) MAIN: Angle: 33°, Dist: 117.65 cm[0m
+[0;32mI (66230) MAIN: Angle: 32°, Dist: 117.58 cm[0m
+[0;32mI (66430) MAIN: Angle: 31°, Dist: 118.40 cm[0m
+[0;32mI (66630) MAIN: Angle: 30°, Dist: 117.96 cm[0m
+[0;32mI (66830) MAIN: Angle: 29°, Dist: 118.13 cm[0m
+[0;32mI (67030) MAIN: Angle: 28°, Dist: 118.70 cm[0m
+[0;32mI (67230) MAIN: Angle: 27°, Dist: 118.01 cm[0m
+[0;32mI (67430) MAIN: Angle: 26°, Dist: 119.18 cm[0m
+[0;32mI (67630) MAIN: Angle: 25°, Dist: 118.64 cm[0m
+[0;32mI (67830) MAIN: Angle: 24°, Dist: 118.94 cm[0m
+[0;32mI (68030) MAIN: Angle: 23°, Dist: 119.31 cm[0m
+[0;32mI (68230) MAIN: Angle: 22°, Dist: 119.31 cm[0m
+[0;32mI (68430) MAIN: Angle: 21°, Dist: 0.02 cm[0m
+[0;32mI (68630) MAIN: Angle: 20°, Dist: 119.72 cm[0m
+[0;32mI (68830) MAIN: Angle: 19°, Dist: 119.96 cm[0m
+[0;32mI (69030) MAIN: Angle: 18°, Dist: 119.30 cm[0m
+[0;32mI (69230) MAIN: Angle: 17°, Dist: 120.10 cm[0m
+[0;32mI (69430) MAIN: Angle: 16°, Dist: 119.96 cm[0m
+[0;32mI (69630) MAIN: Angle: 15°, Dist: 0.02 cm[0m
+[0;32mI (69830) MAIN: Angle: 14°, Dist: 94.62 cm[0m
+[0;32mI (70030) MAIN: Angle: 13°, Dist: 120.80 cm[0m
+[0;32mI (70230) MAIN: Angle: 12°, Dist: 121.63 cm[0m
+[0;32mI (70430) MAIN: Angle: 11°, Dist: 0.03 cm[0m
+[0;32mI (70630) MAIN: Angle: 10°, Dist: 121.22 cm[0m
+[0;32mI (70830) MAIN: Angle: 9°, Dist: 0.05 cm[0m
+[0;32mI (71030) MAIN: Angle: 8°, Dist: 121.95 cm[0m
+[0;32mI (71230) MAIN: Angle: 7°, Dist: 121.95 cm[0m
+[0;32mI (71430) MAIN: Angle: 6°, Dist: 0.05 cm[0m
+[0;32mI (71630) MAIN: Angle: 5°, Dist: 0.05 cm[0m
+[0;32mI (71830) MAIN: Angle: 4°, Dist: 120.46 cm[0m
+[0;32mI (72030) MAIN: Angle: 3°, Dist: 0.03 cm[0m
+[0;32mI (72230) MAIN: Angle: 2°, Dist: 0.03 cm[0m
+[0;32mI (72430) MAIN: Angle: 1°, Dist: 119.21 cm[0m
+[0;32mI (72630) MAIN: Angle: 0°, Dist: 0.02 cm[0m
+[0;32mI (72830) MAIN: Angle: 1°, Dist: 0.03 cm[0m
+[0;32mI (73030) MAIN: Angle: 2°, Dist: 0.03 cm[0m
+[0;32mI (73230) MAIN: Angle: 3°, Dist: 119.21 cm[0m
+[0;32mI (73430) MAIN: Angle: 4°, Dist: 0.07 cm[0m
+[0;32mI (73630) MAIN: Angle: 5°, Dist: 0.02 cm[0m
+[0;32mI (73830) MAIN: Angle: 6°, Dist: 0.07 cm[0m
+[0;32mI (74030) MAIN: Angle: 7°, Dist: 122.93 cm[0m
+[0;32mI (74230) MAIN: Angle: 8°, Dist: 121.06 cm[0m
+[0;32mI (74430) MAIN: Angle: 9°, Dist: 0.02 cm[0m
+[0;32mI (74630) MAIN: Angle: 10°, Dist: 93.00 cm[0m
+[0;32mI (74830) MAIN: Angle: 11°, Dist: 93.69 cm[0m
+[0;32mI (75030) MAIN: Angle: 12°, Dist: 93.07 cm[0m
+[0;32mI (75230) MAIN: Angle: 13°, Dist: 93.84 cm[0m
+[0;32mI (75430) MAIN: Angle: 14°, Dist: 92.94 cm[0m
+[0;32mI (75630) MAIN: Angle: 15°, Dist: 0.07 cm[0m
+[0;32mI (75830) MAIN: Angle: 16°, Dist: 0.03 cm[0m
+[0;32mI (76030) MAIN: Angle: 17°, Dist: 0.03 cm[0m
+[0;32mI (76230) MAIN: Angle: 18°, Dist: 0.02 cm[0m
+[0;32mI (76430) MAIN: Angle: 19°, Dist: 0.02 cm[0m
+[0;32mI (76630) MAIN: Angle: 20°, Dist: 0.03 cm[0m
+[0;32mI (76830) MAIN: Angle: 21°, Dist: 0.07 cm[0m
+[0;32mI (77030) MAIN: Angle: 22°, Dist: 124.39 cm[0m
+[0;32mI (77230) MAIN: Angle: 23°, Dist: 0.02 cm[0m
+[0;32mI (77430) MAIN: Angle: 24°, Dist: 0.02 cm[0m
+[0;32mI (77630) MAIN: Angle: 25°, Dist: 122.47 cm[0m
+[0;32mI (77830) MAIN: Angle: 26°, Dist: 0.03 cm[0m
+[0;32mI (78030) MAIN: Angle: 27°, Dist: 0.03 cm[0m
+[0;32mI (78230) MAIN: Angle: 28°, Dist: 0.02 cm[0m
+[0;32mI (78430) MAIN: Angle: 29°, Dist: 0.02 cm[0m
+[0;32mI (78630) MAIN: Angle: 30°, Dist: 0.07 cm[0m
+[0;32mI (78830) MAIN: Angle: 31°, Dist: 0.03 cm[0m
+[0;32mI (79030) MAIN: Angle: 32°, Dist: 0.09 cm[0m
+[0;32mI (79230) MAIN: Angle: 33°, Dist: 125.40 cm[0m
+[0;32mI (79430) MAIN: Angle: 34°, Dist: 126.62 cm[0m
+[0;32mI (79630) MAIN: Angle: 35°, Dist: 0.03 cm[0m
+[0;32mI (79830) MAIN: Angle: 36°, Dist: 0.09 cm[0m
+[0;32mI (80030) MAIN: Angle: 37°, Dist: 0.02 cm[0m
+[0;32mI (80230) MAIN: Angle: 38°, Dist: 0.07 cm[0m
+[0;32mI (80430) MAIN: Angle: 39°, Dist: 78.60 cm[0m
+[0;32mI (80630) MAIN: Angle: 40°, Dist: 0.09 cm[0m
+[0;32mI (80830) MAIN: Angle: 41°, Dist: 0.07 cm[0m
+[0;32mI (81030) MAIN: Angle: 42°, Dist: 0.02 cm[0m
+[0;32mI (81230) MAIN: Angle: 43°, Dist: 123.46 cm[0m
+[0;32mI (81430) MAIN: Angle: 44°, Dist: 0.03 cm[0m
+[0;32mI (81630) MAIN: Angle: 45°, Dist: 124.06 cm[0m
+[0;32mI (81840) MAIN: Angle: 46°, Dist: 0.09 cm[0m
+[0;32mI (82050) MAIN: Angle: 47°, Dist: 123.07 cm[0m
+[0;32mI (82250) MAIN: Angle: 48°, Dist: 112.61 cm[0m
+[0;32mI (82450) MAIN: Angle: 49°, Dist: 113.57 cm[0m
+[0;32mI (82650) MAIN: Angle: 50°, Dist: 113.65 cm[0m
+[0;32mI (82850) MAIN: Angle: 51°, Dist: 114.10 cm[0m
+[0;32mI (83050) MAIN: Angle: 52°, Dist: 115.21 cm[0m
+[0;32mI (83250) MAIN: Angle: 53°, Dist: 115.73 cm[0m
+[0;32mI (83450) MAIN: Angle: 54°, Dist: 116.36 cm[0m
+[0;32mI (83650) MAIN: Angle: 55°, Dist: 117.85 cm[0m
+[0;32mI (83850) MAIN: Angle: 56°, Dist: 118.52 cm[0m
+[0;32mI (84050) MAIN: Angle: 57°, Dist: 119.11 cm[0m
+[0;32mI (84250) MAIN: Angle: 58°, Dist: 119.19 cm[0m
+[0;32mI (84450) MAIN: Angle: 59°, Dist: 120.79 cm[0m
+[0;32mI (84650) MAIN: Angle: 60°, Dist: 120.92 cm[0m
+[0;32mI (84850) MAIN: Angle: 61°, Dist: 122.09 cm[0m
+[0;32mI (85050) MAIN: Angle: 62°, Dist: 122.78 cm[0m
+[0;32mI (85250) MAIN: Angle: 63°, Dist: 122.64 cm[0m
+[0;32mI (85450) MAIN: Angle: 64°, Dist: 121.70 cm[0m
+[0;32mI (85650) MAIN: Angle: 65°, Dist: 0.03 cm[0m
+[0;32mI (85850) MAIN: Angle: 66°, Dist: 122.23 cm[0m
+[0;32mI (86050) MAIN: Angle: 67°, Dist: 122.78 cm[0m
+[0;32mI (86250) MAIN: Angle: 68°, Dist: 0.05 cm[0m
+[0;32mI (86450) MAIN: Angle: 69°, Dist: 0.02 cm[0m
+[0;32mI (86650) MAIN: Angle: 70°, Dist: 122.02 cm[0m
+[0;32mI (86850) MAIN: Angle: 71°, Dist: 0.05 cm[0m
+[0;32mI (87050) MAIN: Angle: 72°, Dist: 0.03 cm[0m
+[0;32mI (87250) MAIN: Angle: 73°, Dist: 123.46 cm[0m
+[0;32mI (87450) MAIN: Angle: 74°, Dist: 0.03 cm[0m
+[0;32mI (87650) MAIN: Angle: 75°, Dist: 122.40 cm[0m
+[0;32mI (87850) MAIN: Angle: 76°, Dist: 0.03 cm[0m
+[0;32mI (88050) MAIN: Angle: 77°, Dist: 0.03 cm[0m
+[0;32mI (88250) MAIN: Angle: 78°, Dist: 123.72 cm[0m
+[0;32mI (88450) MAIN: Angle: 79°, Dist: 123.65 cm[0m
+[0;32mI (88650) MAIN: Angle: 80°, Dist: 0.02 cm[0m
+[0;32mI (88850) MAIN: Angle: 81°, Dist: 0.03 cm[0m
+[0;32mI (89050) MAIN: Angle: 82°, Dist: 124.41 cm[0m
+[0;32mI (89250) MAIN: Angle: 83°, Dist: 123.21 cm[0m
+[0;32mI (89450) MAIN: Angle: 84°, Dist: 124.44 cm[0m
+[0;32mI (89650) MAIN: Angle: 85°, Dist: 86.78 cm[0m
+[0;32mI (89850) MAIN: Angle: 86°, Dist: 0.02 cm[0m
+[0;32mI (90050) MAIN: Angle: 87°, Dist: 0.07 cm[0m
+[0;32mI (90250) MAIN: Angle: 88°, Dist: 0.10 cm[0m
+[0;32mI (90450) MAIN: Angle: 89°, Dist: 0.09 cm[0m
+[0;32mI (90650) MAIN: Angle: 90°, Dist: 87.36 cm[0m
+[0;32mI (90850) MAIN: Angle: 91°, Dist: 86.71 cm[0m
+[0;32mI (91050) MAIN: Angle: 92°, Dist: 85.29 cm[0m
+[0;32mI (91250) MAIN: Angle: 93°, Dist: 86.01 cm[0m
+[0;32mI (91450) MAIN: Angle: 94°, Dist: 0.10 cm[0m
+[0;32mI (91650) MAIN: Angle: 95°, Dist: 83.93 cm[0m
+[0;32mI (91870) MAIN: Angle: 96°, Dist: 0.14 cm[0m
+[0;32mI (92070) MAIN: Angle: 97°, Dist: 84.38 cm[0m
+[0;32mI (92270) MAIN: Angle: 98°, Dist: 0.03 cm[0m
+[0;32mI (92470) MAIN: Angle: 99°, Dist: 83.09 cm[0m
+[0;32mI (92670) MAIN: Angle: 100°, Dist: 83.37 cm[0m
+[0;32mI (92870) MAIN: Angle: 101°, Dist: 0.05 cm[0m
+[0;32mI (93070) MAIN: Angle: 102°, Dist: 0.02 cm[0m
+[0;32mI (93270) MAIN: Angle: 103°, Dist: 0.02 cm[0m
+[0;32mI (93470) MAIN: Angle: 104°, Dist: 0.02 cm[0m
+[0;32mI (93670) MAIN: Angle: 105°, Dist: 0.02 cm[0m
+[0;32mI (93870) MAIN: Angle: 106°, Dist: 121.83 cm[0m
+[0;32mI (94070) MAIN: Angle: 107°, Dist: 0.09 cm[0m
+[0;32mI (94270) MAIN: Angle: 108°, Dist: 0.02 cm[0m
+[0;32mI (94470) MAIN: Angle: 109°, Dist: 0.02 cm[0m
+[0;32mI (94670) MAIN: Angle: 110°, Dist: 0.02 cm[0m
+[0;32mI (94870) MAIN: Angle: 111°, Dist: 0.02 cm[0m
+[0;32mI (95070) MAIN: Angle: 112°, Dist: 0.02 cm[0m
+[0;32mI (95270) MAIN: Angle: 113°, Dist: 0.02 cm[0m
+[0;32mI (95470) MAIN: Angle: 114°, Dist: 0.02 cm[0m
+[0;32mI (95670) MAIN: Angle: 115°, Dist: 0.09 cm[0m
+[0;32mI (95870) MAIN: Angle: 116°, Dist: 0.03 cm[0m
+[0;32mI (96070) MAIN: Angle: 117°, Dist: 0.02 cm[0m
+[0;32mI (96270) MAIN: Angle: 118°, Dist: 0.03 cm[0m
+[0;32mI (96470) MAIN: Angle: 119°, Dist: 0.02 cm[0m
+[0;32mI (96670) MAIN: Angle: 120°, Dist: 0.02 cm[0m
+[0;32mI (96870) MAIN: Angle: 121°, Dist: 0.02 cm[0m
+[0;32mI (97070) MAIN: Angle: 122°, Dist: 0.02 cm[0m
+[0;32mI (97270) MAIN: Angle: 123°, Dist: 0.02 cm[0m
+[0;32mI (97470) MAIN: Angle: 124°, Dist: 0.02 cm[0m
+[0;32mI (97670) MAIN: Angle: 125°, Dist: 0.02 cm[0m
+[0;32mI (97870) MAIN: Angle: 126°, Dist: 0.02 cm[0m
+[0;32mI (98070) MAIN: Angle: 127°, Dist: 0.02 cm[0m
+[0;32mI (98270) MAIN: Angle: 128°, Dist: 0.03 cm[0m
+[0;32mI (98470) MAIN: Angle: 129°, Dist: 0.02 cm[0m
+[0;32mI (98670) MAIN: Angle: 130°, Dist: 0.02 cm[0m
+[0;32mI (98870) MAIN: Angle: 131°, Dist: 0.02 cm[0m
+[0;32mI (99070) MAIN: Angle: 132°, Dist: 0.02 cm[0m
+[0;32mI (99270) MAIN: Angle: 133°, Dist: 0.02 cm[0m
+[0;32mI (99470) MAIN: Angle: 134°, Dist: 0.03 cm[0m
+[0;32mI (99670) MAIN: Angle: 135°, Dist: 0.02 cm[0m
+[0;32mI (99870) MAIN: Angle: 136°, Dist: 0.02 cm[0m
+[0;32mI (100070) MAIN: Angle: 137°, Dist: 0.03 cm[0m
+[0;32mI (100270) MAIN: Angle: 138°, Dist: 0.02 cm[0m
+[0;32mI (100470) MAIN: Angle: 139°, Dist: 0.03 cm[0m
+[0;32mI (100670) MAIN: Angle: 140°, Dist: 0.02 cm[0m
+[0;32mI (100870) MAIN: Angle: 141°, Dist: 0.10 cm[0m
+[0;32mI (101070) MAIN: Angle: 142°, Dist: 0.03 cm[0m
+[0;32mI (101270) MAIN: Angle: 143°, Dist: 0.03 cm[0m
+[0;32mI (101470) MAIN: Angle: 144°, Dist: 0.03 cm[0m
+[0;32mI (101670) MAIN: Angle: 145°, Dist: 0.09 cm[0m
+[0;32mI (101870) MAIN: Angle: 146°, Dist: 0.05 cm[0m
+[0;32mI (102070) MAIN: Angle: 147°, Dist: 0.09 cm[0m
+[0;32mI (102270) MAIN: Angle: 148°, Dist: 0.10 cm[0m
+[0;32mI (102470) MAIN: Angle: 149°, Dist: 0.03 cm[0m
+[0;32mI (102670) MAIN: Angle: 150°, Dist: 0.05 cm[0m
+[0;32mI (102870) MAIN: Angle: 151°, Dist: 0.02 cm[0m
+[0;32mI (103070) MAIN: Angle: 152°, Dist: 0.05 cm[0m
+[0;32mI (103270) MAIN: Angle: 153°, Dist: 0.02 cm[0m
+[0;32mI (103470) MAIN: Angle: 154°, Dist: 0.03 cm[0m
+[0;32mI (103670) MAIN: Angle: 155°, Dist: 0.03 cm[0m
+[0;32mI (103870) MAIN: Angle: 156°, Dist: 0.03 cm[0m
+[0;32mI (104070) MAIN: Angle: 157°, Dist: 0.03 cm[0m
+[0;32mI (104270) MAIN: Angle: 158°, Dist: 0.09 cm[0m
+[0;32mI (104470) MAIN: Angle: 159°, Dist: 0.03 cm[0m
+[0;32mI (104670) MAIN: Angle: 160°, Dist: 0.02 cm[0m
+[0;32mI (104870) MAIN: Angle: 161°, Dist: 0.05 cm[0m
+[0;32mI (105070) MAIN: Angle: 162°, Dist: 0.02 cm[0m
+[0;32mI (105270) MAIN: Angle: 163°, Dist: 0.02 cm[0m
+[0;32mI (105470) MAIN: Angle: 164°, Dist: 0.02 cm[0m
+[0;32mI (105670) MAIN: Angle: 165°, Dist: 0.03 cm[0m
+[0;32mI (105870) MAIN: Angle: 166°, Dist: 0.03 cm[0m
+[0;32mI (106070) MAIN: Angle: 167°, Dist: 0.07 cm[0m
+[0;32mI (106270) MAIN: Angle: 168°, Dist: 0.07 cm[0m
+[0;32mI (106470) MAIN: Angle: 169°, Dist: 0.03 cm[0m
+[0;33mW (106700) SONAR: Echo start timeout[0m
+[0;32mI (106700) MAIN: Angle: 170°, Dist: -1.00 cm[0m
+[0;33mW (106930) SONAR: Echo start timeout[0m
+[0;32mI (106930) MAIN: Angle: 171°, Dist: -1.00 cm[0m
+[0;33mW (107160) SONAR: Echo start timeout[0m
+[0;32mI (107160) MAIN: Angle: 172°, Dist: -1.00 cm[0m
+[0;33mW (107390) SONAR: Echo start timeout[0m
+[0;32mI (107390) MAIN: Angle: 173°, Dist: -1.00 cm[0m
+[0;33mW (107620) SONAR: Echo start timeout[0m
+[0;32mI (107620) MAIN: Angle: 174°, Dist: -1.00 cm[0m
+[0;33mW (107850) SONAR: Echo start timeout[0m
+[0;32mI (107850) MAIN: Angle: 175°, Dist: -1.00 cm[0m
+[0;33mW (108080) SONAR: Echo start timeout[0m
+[0;32mI (108080) MAIN: Angle: 176°, Dist: -1.00 cm[0m
+[0;33mW (108310) SONAR: Echo start timeout[0m
+[0;32mI (108310) MAIN: Angle: 177°, Dist: -1.00 cm[0m
+[0;33mW (108540) SONAR: Echo start timeout[0m
+[0;32mI (108540) MAIN: Angle: 178°, Dist: -1.00 cm[0m
+[0;33mW (108770) SONAR: Echo start timeout[0m
+[0;32mI (108770) MAIN: Angle: 179°, Dist: -1.00 cm[0m
+[0;33mW (109000) SONAR: Echo start timeout[0m
+[0;32mI (109000) MAIN: Angle: 180°, Dist: -1.00 cm[0m
+[0;33mW (109230) SONAR: Echo start timeout[0m
+[0;32mI (109230) MAIN: Angle: 179°, Dist: -1.00 cm[0m
+[0;33mW (109460) SONAR: Echo start timeout[0m
+[0;32mI (109460) MAIN: Angle: 178°, Dist: -1.00 cm[0m
+[0;33mW (109690) SONAR: Echo start timeout[0m
+[0;32mI (109690) MAIN: Angle: 177°, Dist: -1.00 cm[0m
+[0;33mW (109920) SONAR: Echo start timeout[0m
+[0;32mI (109920) MAIN: Angle: 176°, Dist: -1.00 cm[0m
+[0;33mW (110150) SONAR: Echo start timeout[0m
+[0;32mI (110150) MAIN: Angle: 175°, Dist: -1.00 cm[0m
+[0;33mW (110380) SONAR: Echo start timeout[0m
+[0;32mI (110380) MAIN: Angle: 174°, Dist: -1.00 cm[0m
+[0;33mW (110610) SONAR: Echo start timeout[0m
+[0;32mI (110610) MAIN: Angle: 173°, Dist: -1.00 cm[0m
+[0;33mW (110840) SONAR: Echo start timeout[0m
+[0;32mI (110840) MAIN: Angle: 172°, Dist: -1.00 cm[0m
+[0;33mW (111070) SONAR: Echo start timeout[0m
+[0;32mI (111070) MAIN: Angle: 171°, Dist: -1.00 cm[0m
+[0;33mW (111300) SONAR: Echo start timeout[0m
+[0;32mI (111300) MAIN: Angle: 170°, Dist: -1.00 cm[0m
+[0;33mW (111530) SONAR: Echo start timeout[0m
+[0;32mI (111530) MAIN: Angle: 169°, Dist: -1.00 cm[0m
+[0;33mW (111760) SONAR: Echo start timeout[0m
+[0;32mI (111760) MAIN: Angle: 168°, Dist: -1.00 cm[0m
+[0;33mW (111990) SONAR: Echo start timeout[0m
+[0;32mI (111990) MAIN: Angle: 167°, Dist: -1.00 cm[0m
+[0;33mW (112220) SONAR: Echo start timeout[0m
+[0;32mI (112220) MAIN: Angle: 166°, Dist: -1.00 cm[0m
+[0;33mW (112450) SONAR: Echo start timeout[0m
+[0;32mI (112450) MAIN: Angle: 165°, Dist: -1.00 cm[0m
+[0;33mW (112680) SONAR: Echo start timeout[0m
+[0;32mI (112680) MAIN: Angle: 164°, Dist: -1.00 cm[0m
+[0;33mW (112910) SONAR: Echo start timeout[0m
+[0;32mI (112910) MAIN: Angle: 163°, Dist: -1.00 cm[0m
+[0;33mW (113140) SONAR: Echo start timeout[0m
+[0;32mI (113140) MAIN: Angle: 162°, Dist: -1.00 cm[0m
+[0;33mW (113370) SONAR: Echo start timeout[0m
+[0;32mI (113370) MAIN: Angle: 161°, Dist: -1.00 cm[0m
+[0;33mW (113600) SONAR: Echo start timeout[0m
+[0;32mI (113600) MAIN: Angle: 160°, Dist: -1.00 cm[0m
+[0;33mW (113830) SONAR: Echo start timeout[0m
+[0;32mI (113830) MAIN: Angle: 159°, Dist: -1.00 cm[0m
+[0;33mW (114060) SONAR: Echo start timeout[0m
+[0;32mI (114060) MAIN: Angle: 158°, Dist: -1.00 cm[0m
+[0;33mW (114290) SONAR: Echo start timeout[0m
+[0;32mI (114290) MAIN: Angle: 157°, Dist: -1.00 cm[0m
+[0;33mW (114520) SONAR: Echo start timeout[0m
+[0;32mI (114520) MAIN: Angle: 156°, Dist: -1.00 cm[0m
+[0;33mW (114750) SONAR: Echo start timeout[0m
+[0;32mI (114750) MAIN: Angle: 155°, Dist: -1.00 cm[0m
+[0;33mW (114980) SONAR: Echo start timeout[0m
+[0;32mI (114980) MAIN: Angle: 154°, Dist: -1.00 cm[0m
+[0;33mW (115210) SONAR: Echo start timeout[0m
+[0;32mI (115210) MAIN: Angle: 153°, Dist: -1.00 cm[0m
+[0;33mW (115440) SONAR: Echo start timeout[0m
+[0;32mI (115440) MAIN: Angle: 152°, Dist: -1.00 cm[0m
+[0;33mW (115670) SONAR: Echo start timeout[0m
+[0;32mI (115670) MAIN: Angle: 151°, Dist: -1.00 cm[0m
+[0;33mW (115900) SONAR: Echo start timeout[0m
+[0;32mI (115900) MAIN: Angle: 150°, Dist: -1.00 cm[0m
+[0;33mW (116130) SONAR: Echo start timeout[0m
+[0;32mI (116130) MAIN: Angle: 149°, Dist: -1.00 cm[0m
+[0;32mI (116330) MAIN: Angle: 148°, Dist: 99.52 cm[0m
+[0;32mI (116530) MAIN: Angle: 147°, Dist: 101.37 cm[0m
+[0;32mI (116730) MAIN: Angle: 146°, Dist: 103.57 cm[0m
+[0;32mI (116930) MAIN: Angle: 145°, Dist: 112.38 cm[0m
+[0;32mI (117130) MAIN: Angle: 144°, Dist: 114.80 cm[0m
+[0;32mI (117330) MAIN: Angle: 143°, Dist: 111.42 cm[0m
+[0;32mI (117530) MAIN: Angle: 142°, Dist: 0.02 cm[0m
+[0;32mI (117730) MAIN: Angle: 141°, Dist: 0.02 cm[0m
+[0;32mI (117930) MAIN: Angle: 140°, Dist: 94.17 cm[0m
+[0;32mI (118130) MAIN: Angle: 139°, Dist: 94.93 cm[0m
+[0;32mI (118330) MAIN: Angle: 138°, Dist: 0.02 cm[0m
+[0;32mI (118530) MAIN: Angle: 137°, Dist: 0.03 cm[0m
+[0;32mI (118730) MAIN: Angle: 136°, Dist: 0.07 cm[0m
+[0;32mI (118930) MAIN: Angle: 135°, Dist: 92.71 cm[0m
+[0;32mI (119130) MAIN: Angle: 134°, Dist: 93.38 cm[0m
+[0;32mI (119330) MAIN: Angle: 133°, Dist: 94.48 cm[0m
+[0;32mI (119530) MAIN: Angle: 132°, Dist: 94.05 cm[0m
+[0;32mI (119730) MAIN: Angle: 131°, Dist: 93.86 cm[0m
+[0;32mI (119930) MAIN: Angle: 130°, Dist: 0.10 cm[0m
+[0;32mI (120130) MAIN: Angle: 129°, Dist: 94.17 cm[0m
+[0;32mI (120330) MAIN: Angle: 128°, Dist: 93.11 cm[0m
+[0;32mI (120530) MAIN: Angle: 127°, Dist: 92.80 cm[0m
+[0;32mI (120730) MAIN: Angle: 126°, Dist: 0.02 cm[0m
+[0;32mI (120930) MAIN: Angle: 125°, Dist: 120.80 cm[0m
+[0;32mI (121130) MAIN: Angle: 124°, Dist: 0.02 cm[0m
+[0;32mI (121330) MAIN: Angle: 123°, Dist: 91.27 cm[0m
+[0;32mI (121530) MAIN: Angle: 122°, Dist: 91.82 cm[0m
+[0;32mI (121730) MAIN: Angle: 121°, Dist: 0.07 cm[0m
+[0;32mI (121930) MAIN: Angle: 120°, Dist: 90.40 cm[0m
+[0;32mI (122130) MAIN: Angle: 119°, Dist: 88.87 cm[0m
+[0;32mI (122330) MAIN: Angle: 118°, Dist: 88.99 cm[0m
+[0;32mI (122530) MAIN: Angle: 117°, Dist: 89.18 cm[0m
+[0;33mW (122760) SONAR: Echo start timeout[0m
+[0;32mI (122760) MAIN: Angle: 116°, Dist: -1.00 cm[0m
+[0;33mW (122990) SONAR: Echo start timeout[0m
+[0;32mI (122990) MAIN: Angle: 115°, Dist: -1.00 cm[0m
+[0;33mW (123220) SONAR: Echo start timeout[0m
+[0;32mI (123220) MAIN: Angle: 114°, Dist: -1.00 cm[0m
+[0;33mW (123450) SONAR: Echo start timeout[0m
+[0;32mI (123450) MAIN: Angle: 113°, Dist: -1.00 cm[0m
+[0;32mI (123650) MAIN: Angle: 112°, Dist: 97.77 cm[0m
+[0;33mW (123880) SONAR: Echo end timeout[0m
+[0;32mI (123880) MAIN: Angle: 111°, Dist: -1.00 cm[0m
+[0;33mW (124110) SONAR: Echo end timeout[0m
+[0;32mI (124110) MAIN: Angle: 110°, Dist: -1.00 cm[0m
+[0;33mW (124340) SONAR: Echo end timeout[0m
+[0;32mI (124340) MAIN: Angle: 109°, Dist: -1.00 cm[0m
+[0;33mW (124570) SONAR: Echo end timeout[0m
+[0;32mI (124570) MAIN: Angle: 108°, Dist: -1.00 cm[0m
+[0;33mW (124800) SONAR: Echo end timeout[0m
+[0;32mI (124800) MAIN: Angle: 107°, Dist: -1.00 cm[0m
+[0;33mW (125030) SONAR: Echo end timeout[0m
+[0;32mI (125030) MAIN: Angle: 106°, Dist: -1.00 cm[0m
+[0;33mW (125260) SONAR: Echo end timeout[0m
+[0;32mI (125260) MAIN: Angle: 105°, Dist: -1.00 cm[0m
+[0;33mW (125490) SONAR: Echo end timeout[0m
+[0;32mI (125490) MAIN: Angle: 104°, Dist: -1.00 cm[0m
+[0;33mW (125720) SONAR: Echo end timeout[0m
+[0;32mI (125720) MAIN: Angle: 103°, Dist: -1.00 cm[0m
+[0;33mW (125950) SONAR: Echo end timeout[0m
+[0;32mI (125950) MAIN: Angle: 102°, Dist: -1.00 cm[0m
+[0;33mW (126180) SONAR: Echo end timeout[0m
+[0;32mI (126180) MAIN: Angle: 101°, Dist: -1.00 cm[0m
+[0;33mW (126410) SONAR: Echo end timeout[0m
+[0;32mI (126410) MAIN: Angle: 100°, Dist: -1.00 cm[0m
+[0;33mW (126640) SONAR: Echo end timeout[0m
+[0;32mI (126640) MAIN: Angle: 99°, Dist: -1.00 cm[0m
+[0;33mW (126870) SONAR: Echo end timeout[0m
+[0;32mI (126870) MAIN: Angle: 98°, Dist: -1.00 cm[0m
+[0;33mW (127100) SONAR: Echo end timeout[0m
+[0;32mI (127100) MAIN: Angle: 97°, Dist: -1.00 cm[0m
+[0;33mW (127330) SONAR: Echo end timeout[0m
+[0;32mI (127330) MAIN: Angle: 96°, Dist: -1.00 cm[0m
+[0;33mW (127560) SONAR: Echo end timeout[0m
+[0;32mI (127560) MAIN: Angle: 95°, Dist: -1.00 cm[0m
+[0;33mW (127790) SONAR: Echo end timeout[0m
+[0;32mI (127790) MAIN: Angle: 94°, Dist: -1.00 cm[0m
+[0;33mW (128020) SONAR: Echo end timeout[0m
+[0;32mI (128020) MAIN: Angle: 93°, Dist: -1.00 cm[0m
+[0;33mW (128250) SONAR: Echo end timeout[0m
+[0;32mI (128250) MAIN: Angle: 92°, Dist: -1.00 cm[0m
+[0;33mW (128480) SONAR: Echo end timeout[0m
+[0;32mI (128480) MAIN: Angle: 91°, Dist: -1.00 cm[0m
+[0;33mW (128710) SONAR: Echo end timeout[0m
+[0;32mI (128710) MAIN: Angle: 90°, Dist: -1.00 cm[0m
+[0;33mW (128940) SONAR: Echo end timeout[0m
+[0;32mI (128940) MAIN: Angle: 89°, Dist: -1.00 cm[0m
+[0;33mW (129170) SONAR: Echo end timeout[0m
+[0;32mI (129170) MAIN: Angle: 88°, Dist: -1.00 cm[0m
+[0;32mI (129370) MAIN: Angle: 87°, Dist: 70.13 cm[0m
+[0;32mI (129570) MAIN: Angle: 86°, Dist: 71.72 cm[0m
+[0;32mI (129780) MAIN: Angle: 85°, Dist: 300.07 cm[0m
+[0;32mI (129990) MAIN: Angle: 84°, Dist: 300.83 cm[0m
+[0;32mI (130200) MAIN: Angle: 83°, Dist: 301.05 cm[0m
+[0;32mI (130410) MAIN: Angle: 82°, Dist: 301.26 cm[0m
+[0;32mI (130610) MAIN: Angle: 81°, Dist: 17.29 cm[0m
+[0;32mI (130810) MAIN: Angle: 80°, Dist: 9.40 cm[0m
+[0;32mI (131010) MAIN: Angle: 79°, Dist: 8.73 cm[0m
+[0;32mI (131210) MAIN: Angle: 78°, Dist: 18.33 cm[0m
+[0;32mI (131410) MAIN: Angle: 77°, Dist: 4.29 cm[0m
+[0;32mI (131610) MAIN: Angle: 76°, Dist: 17.39 cm[0m
+[0;32mI (131810) MAIN: Angle: 75°, Dist: 17.34 cm[0m
+[0;32mI (132010) MAIN: Angle: 74°, Dist: 3.86 cm[0m
+[0;32mI (132210) MAIN: Angle: 73°, Dist: 3.16 cm[0m
+[0;32mI (132410) MAIN: Angle: 72°, Dist: 17.89 cm[0m
+[0;32mI (132610) MAIN: Angle: 71°, Dist: 5.25 cm[0m
+[0;32mI (132810) MAIN: Angle: 70°, Dist: 17.48 cm[0m
+[0;32mI (133010) MAIN: Angle: 69°, Dist: 4.24 cm[0m
+[0;32mI (133210) MAIN: Angle: 68°, Dist: 4.29 cm[0m
+[0;32mI (133410) MAIN: Angle: 67°, Dist: 17.99 cm[0m
+[0;32mI (133610) MAIN: Angle: 66°, Dist: 17.58 cm[0m
+[0;32mI (133810) MAIN: Angle: 65°, Dist: 18.11 cm[0m
+[0;32mI (134010) MAIN: Angle: 64°, Dist: 0.36 cm[0m
+[0;32mI (134210) MAIN: Angle: 63°, Dist: 18.25 cm[0m
+[0;32mI (134410) MAIN: Angle: 62°, Dist: 17.61 cm[0m
+[0;32mI (134610) MAIN: Angle: 61°, Dist: 18.18 cm[0m
+[0;32mI (134810) MAIN: Angle: 60°, Dist: 17.61 cm[0m
+[0;32mI (135010) MAIN: Angle: 59°, Dist: 17.96 cm[0m
+[0;32mI (135210) MAIN: Angle: 58°, Dist: 17.60 cm[0m
+[0;32mI (135410) MAIN: Angle: 57°, Dist: 0.36 cm[0m
+[0;32mI (135610) MAIN: Angle: 56°, Dist: 17.56 cm[0m
+[0;32mI (135810) MAIN: Angle: 55°, Dist: 13.72 cm[0m
+[0;32mI (136010) MAIN: Angle: 54°, Dist: 15.09 cm[0m
+[0;32mI (136210) MAIN: Angle: 53°, Dist: 17.54 cm[0m
+[0;32mI (136410) MAIN: Angle: 52°, Dist: 18.93 cm[0m
+[0;32mI (136610) MAIN: Angle: 51°, Dist: 18.47 cm[0m
+[0;32mI (136810) MAIN: Angle: 50°, Dist: 17.63 cm[0m
+[0;32mI (137010) MAIN: Angle: 49°, Dist: 18.57 cm[0m
+[0;32mI (137210) MAIN: Angle: 48°, Dist: 18.38 cm[0m
+[0;32mI (137410) MAIN: Angle: 47°, Dist: 17.60 cm[0m
+[0;32mI (137610) MAIN: Angle: 46°, Dist: 18.47 cm[0m
+[0;32mI (137810) MAIN: Angle: 45°, Dist: 18.50 cm[0m
+[0;33mW (138040) SONAR: Echo end timeout[0m
+[0;32mI (138040) MAIN: Angle: 44°, Dist: -1.00 cm[0m
+[0;33mW (138270) SONAR: Echo end timeout[0m
+[0;32mI (138270) MAIN: Angle: 43°, Dist: -1.00 cm[0m
+[0;33mW (138500) SONAR: Echo end timeout[0m
+[0;32mI (138500) MAIN: Angle: 42°, Dist: -1.00 cm[0m
+[0;33mW (138730) SONAR: Echo end timeout[0m
+[0;32mI (138730) MAIN: Angle: 41°, Dist: -1.00 cm[0m
+[0;33mW (138960) SONAR: Echo end timeout[0m
+[0;32mI (138960) MAIN: Angle: 40°, Dist: -1.00 cm[0m
+[0;33mW (139190) SONAR: Echo end timeout[0m
+[0;32mI (139190) MAIN: Angle: 39°, Dist: -1.00 cm[0m
+[0;33mW (139420) SONAR: Echo end timeout[0m
+[0;32mI (139420) MAIN: Angle: 38°, Dist: -1.00 cm[0m
+[0;33mW (139650) SONAR: Echo end timeout[0m
+[0;32mI (139650) MAIN: Angle: 37°, Dist: -1.00 cm[0m
+[0;33mW (139880) SONAR: Echo end timeout[0m
+[0;32mI (139880) MAIN: Angle: 36°, Dist: -1.00 cm[0m
+[0;33mW (140110) SONAR: Echo end timeout[0m
+[0;32mI (140110) MAIN: Angle: 35°, Dist: -1.00 cm[0m
+[0;33mW (140340) SONAR: Echo end timeout[0m
+[0;32mI (140340) MAIN: Angle: 34°, Dist: -1.00 cm[0m
+[0;33mW (140570) SONAR: Echo end timeout[0m
+[0;32mI (140570) MAIN: Angle: 33°, Dist: -1.00 cm[0m
+[0;33mW (140800) SONAR: Echo end timeout[0m
+[0;32mI (140800) MAIN: Angle: 32°, Dist: -1.00 cm[0m
+[0;33mW (141030) SONAR: Echo end timeout[0m
+[0;32mI (141030) MAIN: Angle: 31°, Dist: -1.00 cm[0m
+[0;33mW (141260) SONAR: Echo end timeout[0m
+[0;32mI (141260) MAIN: Angle: 30°, Dist: -1.00 cm[0m
+[0;33mW (141490) SONAR: Echo end timeout[0m
+[0;32mI (141490) MAIN: Angle: 29°, Dist: -1.00 cm[0m
+[0;33mW (141720) SONAR: Echo end timeout[0m
+[0;32mI (141720) MAIN: Angle: 28°, Dist: -1.00 cm[0m
+[0;33mW (141950) SONAR: Echo end timeout[0m
+[0;32mI (141950) MAIN: Angle: 27°, Dist: -1.00 cm[0m
+[0;33mW (142180) SONAR: Echo end timeout[0m
+[0;32mI (142180) MAIN: Angle: 26°, Dist: -1.00 cm[0m
+[0;33mW (142410) SONAR: Echo end timeout[0m
+[0;32mI (142410) MAIN: Angle: 25°, Dist: -1.00 cm[0m
+[0;33mW (142640) SONAR: Echo end timeout[0m
+[0;32mI (142640) MAIN: Angle: 24°, Dist: -1.00 cm[0m
+[0;33mW (142870) SONAR: Echo end timeout[0m
+[0;32mI (142870) MAIN: Angle: 23°, Dist: -1.00 cm[0m
+[0;33mW (143100) SONAR: Echo end timeout[0m
+[0;32mI (143100) MAIN: Angle: 22°, Dist: -1.00 cm[0m
+[0;33mW (143330) SONAR: Echo end timeout[0m
+[0;32mI (143330) MAIN: Angle: 21°, Dist: -1.00 cm[0m
+[0;33mW (143560) SONAR: Echo end timeout[0m
+[0;32mI (143560) MAIN: Angle: 20°, Dist: -1.00 cm[0m
+[0;33mW (143790) SONAR: Echo end timeout[0m
+[0;32mI (143790) MAIN: Angle: 19°, Dist: -1.00 cm[0m
+[0;33mW (144020) SONAR: Echo end timeout[0m
+[0;32mI (144020) MAIN: Angle: 18°, Dist: -1.00 cm[0m
+[0;33mW (144250) SONAR: Echo end timeout[0m
+[0;32mI (144250) MAIN: Angle: 17°, Dist: -1.00 cm[0m
+[0;32mI (144450) MAIN: Angle: 16°, Dist: 0.02 cm[0m
+[0;33mW (144680) SONAR: Echo end timeout[0m
+[0;32mI (144680) MAIN: Angle: 15°, Dist: -1.00 cm[0m
+[0;33mW (144910) SONAR: Echo end timeout[0m
+[0;32mI (144910) MAIN: Angle: 14°, Dist: -1.00 cm[0m
+[0;33mW (145140) SONAR: Echo end timeout[0m
+[0;32mI (145140) MAIN: Angle: 13°, Dist: -1.00 cm[0m
+[0;32mI (145360) MAIN: Angle: 12°, Dist: 431.37 cm[0m
+[0;32mI (145560) MAIN: Angle: 11°, Dist: 91.34 cm[0m
+[0;32mI (145760) MAIN: Angle: 10°, Dist: 18.18 cm[0m
+[0;32mI (145960) MAIN: Angle: 9°, Dist: 109.85 cm[0m
+[0;32mI (146160) MAIN: Angle: 8°, Dist: 110.50 cm[0m
+[0;32mI (146380) MAIN: Angle: 7°, Dist: 426.19 cm[0m
+[0;32mI (146580) MAIN: Angle: 6°, Dist: 72.96 cm[0m
+[0;32mI (146780) MAIN: Angle: 5°, Dist: 72.29 cm[0m
+[0;32mI (146980) MAIN: Angle: 4°, Dist: 73.26 cm[0m
+[0;32mI (147180) MAIN: Angle: 3°, Dist: 75.19 cm[0m
+[0;32mI (147380) MAIN: Angle: 2°, Dist: 76.47 cm[0m
+[0;32mI (147580) MAIN: Angle: 1°, Dist: 77.62 cm[0m
+[0;32mI (147780) MAIN: Angle: 0°, Dist: 78.92 cm[0m
+[0;32mI (147980) MAIN: Angle: 1°, Dist: 80.09 cm[0m
+[0;32mI (148180) MAIN: Angle: 2°, Dist: 80.83 cm[0m
+[0;32mI (148380) MAIN: Angle: 3°, Dist: 82.68 cm[0m
+[0;32mI (148580) MAIN: Angle: 4°, Dist: 83.49 cm[0m
+[0;32mI (148780) MAIN: Angle: 5°, Dist: 85.53 cm[0m
+[0;32mI (148980) MAIN: Angle: 6°, Dist: 86.88 cm[0m
+[0;32mI (149180) MAIN: Angle: 7°, Dist: 87.71 cm[0m
+[0;32mI (149380) MAIN: Angle: 8°, Dist: 88.53 cm[0m
+[0;32mI (149580) MAIN: Angle: 9°, Dist: 89.15 cm[0m
+[0;32mI (149780) MAIN: Angle: 10°, Dist: 90.67 cm[0m
+[0;32mI (149980) MAIN: Angle: 11°, Dist: 92.39 cm[0m
+[0;32mI (150180) MAIN: Angle: 12°, Dist: 93.60 cm[0m
+[0;32mI (150380) MAIN: Angle: 13°, Dist: 94.62 cm[0m
+[0;32mI (150580) MAIN: Angle: 14°, Dist: 95.78 cm[0m
+[0;32mI (150780) MAIN: Angle: 15°, Dist: 96.88 cm[0m
+[0;32mI (150980) MAIN: Angle: 16°, Dist: 98.03 cm[0m
+[0;32mI (151180) MAIN: Angle: 17°, Dist: 98.92 cm[0m
+[0;32mI (151380) MAIN: Angle: 18°, Dist: 99.28 cm[0m
+[0;32mI (151580) MAIN: Angle: 19°, Dist: 88.82 cm[0m
+[0;32mI (151780) MAIN: Angle: 20°, Dist: 85.25 cm[0m
+[0;32mI (151980) MAIN: Angle: 21°, Dist: 77.57 cm[0m
+[0;32mI (152180) MAIN: Angle: 22°, Dist: 74.67 cm[0m
+[0;32mI (152380) MAIN: Angle: 23°, Dist: 74.83 cm[0m
+[0;32mI (152580) MAIN: Angle: 24°, Dist: 75.00 cm[0m
+[0;32mI (152780) MAIN: Angle: 25°, Dist: 75.07 cm[0m
+[0;32mI (152980) MAIN: Angle: 26°, Dist: 74.38 cm[0m
+[0;32mI (153180) MAIN: Angle: 27°, Dist: 74.74 cm[0m
+[0;33mW (153410) SONAR: Echo end timeout[0m
+[0;32mI (153410) MAIN: Angle: 28°, Dist: -1.00 cm[0m
+[0;33mW (153640) SONAR: Echo end timeout[0m
+[0;32mI (153640) MAIN: Angle: 29°, Dist: -1.00 cm[0m
+[0;33mW (153870) SONAR: Echo end timeout[0m
+[0;32mI (153870) MAIN: Angle: 30°, Dist: -1.00 cm[0m
+[0;33mW (154100) SONAR: Echo end timeout[0m
+[0;32mI (154100) MAIN: Angle: 31°, Dist: -1.00 cm[0m
+[0;33mW (154330) SONAR: Echo end timeout[0m
+[0;32mI (154330) MAIN: Angle: 32°, Dist: -1.00 cm[0m
+[0;33mW (154560) SONAR: Echo end timeout[0m
+[0;32mI (154560) MAIN: Angle: 33°, Dist: -1.00 cm[0m
+[0;33mW (154790) SONAR: Echo end timeout[0m
+[0;32mI (154790) MAIN: Angle: 34°, Dist: -1.00 cm[0m
+[0;33mW (155020) SONAR: Echo end timeout[0m
+[0;32mI (155020) MAIN: Angle: 35°, Dist: -1.00 cm[0m
+[0;33mW (155250) SONAR: Echo end timeout[0m
+[0;32mI (155250) MAIN: Angle: 36°, Dist: -1.00 cm[0m
+[0;33mW (155480) SONAR: Echo end timeout[0m
+[0;32mI (155480) MAIN: Angle: 37°, Dist: -1.00 cm[0m
+[0;33mW (155710) SONAR: Echo end timeout[0m
+[0;32mI (155710) MAIN: Angle: 38°, Dist: -1.00 cm[0m
+[0;33mW (155940) SONAR: Echo end timeout[0m
+[0;32mI (155940) MAIN: Angle: 39°, Dist: -1.00 cm[0m
+[0;33mW (156170) SONAR: Echo end timeout[0m
+[0;32mI (156170) MAIN: Angle: 40°, Dist: -1.00 cm[0m
+[0;33mW (156400) SONAR: Echo end timeout[0m
+[0;32mI (156400) MAIN: Angle: 41°, Dist: -1.00 cm[0m
+[0;33mW (156630) SONAR: Echo end timeout[0m
+[0;32mI (156630) MAIN: Angle: 42°, Dist: -1.00 cm[0m
+[0;33mW (156860) SONAR: Echo end timeout[0m
+[0;32mI (156860) MAIN: Angle: 43°, Dist: -1.00 cm[0m
+[0;33mW (157090) SONAR: Echo end timeout[0m
+[0;32mI (157090) MAIN: Angle: 44°, Dist: -1.00 cm[0m
+[0;33mW (157320) SONAR: Echo end timeout[0m
+[0;32mI (157320) MAIN: Angle: 45°, Dist: -1.00 cm[0m
+[0;33mW (157550) SONAR: Echo end timeout[0m
+[0;32mI (157550) MAIN: Angle: 46°, Dist: -1.00 cm[0m
+[0;33mW (157780) SONAR: Echo end timeout[0m
+[0;32mI (157780) MAIN: Angle: 47°, Dist: -1.00 cm[0m
+[0;33mW (158010) SONAR: Echo end timeout[0m
+[0;32mI (158010) MAIN: Angle: 48°, Dist: -1.00 cm[0m
+[0;33mW (158240) SONAR: Echo end timeout[0m
+[0;32mI (158240) MAIN: Angle: 49°, Dist: -1.00 cm[0m
+[0;33mW (158470) SONAR: Echo end timeout[0m
+[0;32mI (158470) MAIN: Angle: 50°, Dist: -1.00 cm[0m
+[0;33mW (158700) SONAR: Echo end timeout[0m
+[0;32mI (158700) MAIN: Angle: 51°, Dist: -1.00 cm[0m
+[0;33mW (158930) SONAR: Echo end timeout[0m
+[0;32mI (158930) MAIN: Angle: 52°, Dist: -1.00 cm[0m
+[0;33mW (159160) SONAR: Echo end timeout[0m
+[0;32mI (159160) MAIN: Angle: 53°, Dist: -1.00 cm[0m
+[0;33mW (159390) SONAR: Echo end timeout[0m
+[0;32mI (159390) MAIN: Angle: 54°, Dist: -1.00 cm[0m
+[0;33mW (159620) SONAR: Echo end timeout[0m
+[0;32mI (159620) MAIN: Angle: 55°, Dist: -1.00 cm[0m
+[0;33mW (159850) SONAR: Echo end timeout[0m
+[0;32mI (159850) MAIN: Angle: 56°, Dist: -1.00 cm[0m
+[0;33mW (160080) SONAR: Echo end timeout[0m
+[0;32mI (160080) MAIN: Angle: 57°, Dist: -1.00 cm[0m
+[0;33mW (160310) SONAR: Echo end timeout[0m
+[0;32mI (160310) MAIN: Angle: 58°, Dist: -1.00 cm[0m
+[0;33mW (160540) SONAR: Echo end timeout[0m
+[0;32mI (160540) MAIN: Angle: 59°, Dist: -1.00 cm[0m
+[0;33mW (160770) SONAR: Echo end timeout[0m
+[0;32mI (160770) MAIN: Angle: 60°, Dist: -1.00 cm[0m
+[0;33mW (161000) SONAR: Echo end timeout[0m
+[0;32mI (161000) MAIN: Angle: 61°, Dist: -1.00 cm[0m
+[0;33mW (161230) SONAR: Echo end timeout[0m
+[0;32mI (161230) MAIN: Angle: 62°, Dist: -1.00 cm[0m
+[0;33mW (161460) SONAR: Echo end timeout[0m
+[0;32mI (161460) MAIN: Angle: 63°, Dist: -1.00 cm[0m
+[0;33mW (161690) SONAR: Echo end timeout[0m
+[0;32mI (161690) MAIN: Angle: 64°, Dist: -1.00 cm[0m
+[0;33mW (161920) SONAR: Echo end timeout[0m
+[0;32mI (161920) MAIN: Angle: 65°, Dist: -1.00 cm[0m
+[0;33mW (162150) SONAR: Echo end timeout[0m
+[0;32mI (162150) MAIN: Angle: 66°, Dist: -1.00 cm[0m
+[0;33mW (162380) SONAR: Echo end timeout[0m
+[0;32mI (162380) MAIN: Angle: 67°, Dist: -1.00 cm[0m
+[0;33mW (162610) SONAR: Echo end timeout[0m
+[0;32mI (162610) MAIN: Angle: 68°, Dist: -1.00 cm[0m
+[0;33mW (162840) SONAR: Echo end timeout[0m
+[0;32mI (162840) MAIN: Angle: 69°, Dist: -1.00 cm[0m
+[0;33mW (163070) SONAR: Echo end timeout[0m
+[0;32mI (163070) MAIN: Angle: 70°, Dist: -1.00 cm[0m
+[0;33mW (163300) SONAR: Echo end timeout[0m
+[0;32mI (163300) MAIN: Angle: 71°, Dist: -1.00 cm[0m
+[0;33mW (163530) SONAR: Echo end timeout[0m
+[0;32mI (163530) MAIN: Angle: 72°, Dist: -1.00 cm[0m
+[0;33mW (163760) SONAR: Echo end timeout[0m
+[0;32mI (163760) MAIN: Angle: 73°, Dist: -1.00 cm[0m
+[0;33mW (163990) SONAR: Echo end timeout[0m
+[0;32mI (163990) MAIN: Angle: 74°, Dist: -1.00 cm[0m
+[0;33mW (164220) SONAR: Echo end timeout[0m
+[0;32mI (164220) MAIN: Angle: 75°, Dist: -1.00 cm[0m
+[0;33mW (164450) SONAR: Echo end timeout[0m
+[0;32mI (164450) MAIN: Angle: 76°, Dist: -1.00 cm[0m
+[0;33mW (164680) SONAR: Echo end timeout[0m
+[0;32mI (164680) MAIN: Angle: 77°, Dist: -1.00 cm[0m
+[0;33mW (164910) SONAR: Echo end timeout[0m
+[0;32mI (164910) MAIN: Angle: 78°, Dist: -1.00 cm[0m
+[0;33mW (165140) SONAR: Echo end timeout[0m
+[0;32mI (165140) MAIN: Angle: 79°, Dist: -1.00 cm[0m
+[0;33mW (165370) SONAR: Echo end timeout[0m
+[0;32mI (165370) MAIN: Angle: 80°, Dist: -1.00 cm[0m
+[0;33mW (165600) SONAR: Echo end timeout[0m
+[0;32mI (165600) MAIN: Angle: 81°, Dist: -1.00 cm[0m
+[0;33mW (165830) SONAR: Echo end timeout[0m
+[0;32mI (165830) MAIN: Angle: 82°, Dist: -1.00 cm[0m
+[0;33mW (166060) SONAR: Echo end timeout[0m
+[0;32mI (166060) MAIN: Angle: 83°, Dist: -1.00 cm[0m
+[0;33mW (166290) SONAR: Echo end timeout[0m
+[0;32mI (166290) MAIN: Angle: 84°, Dist: -1.00 cm[0m
+[0;33mW (166520) SONAR: Echo end timeout[0m
+[0;32mI (166520) MAIN: Angle: 85°, Dist: -1.00 cm[0m
+[0;33mW (166750) SONAR: Echo end timeout[0m
+[0;32mI (166750) MAIN: Angle: 86°, Dist: -1.00 cm[0m
+[0;33mW (166980) SONAR: Echo end timeout[0m
+[0;32mI (166980) MAIN: Angle: 87°, Dist: -1.00 cm[0m
+[0;33mW (167210) SONAR: Echo end timeout[0m
+[0;32mI (167210) MAIN: Angle: 88°, Dist: -1.00 cm[0m
+[0;33mW (167440) SONAR: Echo end timeout[0m
+[0;32mI (167440) MAIN: Angle: 89°, Dist: -1.00 cm[0m
+[0;33mW (167670) SONAR: Echo end timeout[0m
+[0;32mI (167670) MAIN: Angle: 90°, Dist: -1.00 cm[0m
+[0;33mW (167900) SONAR: Echo end timeout[0m
+[0;32mI (167900) MAIN: Angle: 91°, Dist: -1.00 cm[0m
+[0;33mW (168130) SONAR: Echo end timeout[0m
+[0;32mI (168130) MAIN: Angle: 92°, Dist: -1.00 cm[0m
+[0;33mW (168360) SONAR: Echo end timeout[0m
+[0;32mI (168360) MAIN: Angle: 93°, Dist: -1.00 cm[0m
+[0;33mW (168590) SONAR: Echo end timeout[0m
+[0;32mI (168590) MAIN: Angle: 94°, Dist: -1.00 cm[0m
+[0;33mW (168820) SONAR: Echo end timeout[0m
+[0;32mI (168820) MAIN: Angle: 95°, Dist: -1.00 cm[0m
+[0;32mI (169020) MAIN: Angle: 96°, Dist: 57.14 cm[0m
+[0;32mI (169220) MAIN: Angle: 97°, Dist: 18.40 cm[0m
+[0;33mW (169450) SONAR: Echo end timeout[0m
+[0;32mI (169450) MAIN: Angle: 98°, Dist: -1.00 cm[0m
+[0;33mW (169680) SONAR: Echo end timeout[0m
+[0;32mI (169680) MAIN: Angle: 99°, Dist: -1.00 cm[0m
+[0;33mW (169910) SONAR: Echo end timeout[0m
+[0;32mI (169910) MAIN: Angle: 100°, Dist: -1.00 cm[0m
+[0;33mW (170140) SONAR: Echo end timeout[0m
+[0;32mI (170140) MAIN: Angle: 101°, Dist: -1.00 cm[0m
+[0;33mW (170370) SONAR: Echo end timeout[0m
+[0;32mI (170370) MAIN: Angle: 102°, Dist: -1.00 cm[0m
+[0;33mW (170600) SONAR: Echo end timeout[0m
+[0;32mI (170600) MAIN: Angle: 103°, Dist: -1.00 cm[0m
+[0;32mI (170800) MAIN: Angle: 104°, Dist: 120.92 cm[0m
+[0;32mI (171000) MAIN: Angle: 105°, Dist: 124.70 cm[0m
+[0;32mI (171200) MAIN: Angle: 106°, Dist: 56.44 cm[0m
+[0;33mW (171430) SONAR: Echo start timeout[0m
+[0;32mI (171430) MAIN: Angle: 107°, Dist: -1.00 cm[0m
+[0;33mW (171660) SONAR: Echo start timeout[0m
+[0;32mI (171660) MAIN: Angle: 108°, Dist: -1.00 cm[0m
+[0;33mW (171890) SONAR: Echo start timeout[0m
+[0;32mI (171890) MAIN: Angle: 109°, Dist: -1.00 cm[0m
+[0;33mW (172120) SONAR: Echo start timeout[0m
+[0;32mI (172120) MAIN: Angle: 110°, Dist: -1.00 cm[0m
+[0;33mW (172350) SONAR: Echo start timeout[0m
+[0;32mI (172350) MAIN: Angle: 111°, Dist: -1.00 cm[0m
+[0;33mW (172580) SONAR: Echo start timeout[0m
+[0;32mI (172580) MAIN: Angle: 112°, Dist: -1.00 cm[0m
+[0;33mW (172810) SONAR: Echo start timeout[0m
+[0;32mI (172810) MAIN: Angle: 113°, Dist: -1.00 cm[0m
+[0;33mW (173040) SONAR: Echo start timeout[0m
+[0;32mI (173040) MAIN: Angle: 114°, Dist: -1.00 cm[0m
+[0;33mW (173270) SONAR: Echo end timeout[0m
+[0;32mI (173270) MAIN: Angle: 115°, Dist: -1.00 cm[0m
+[0;33mW (173500) SONAR: Echo end timeout[0m
+[0;32mI (173500) MAIN: Angle: 116°, Dist: -1.00 cm[0m
+[0;33mW (173730) SONAR: Echo end timeout[0m
+[0;32mI (173730) MAIN: Angle: 117°, Dist: -1.00 cm[0m
+[0;32mI (173930) MAIN: Angle: 118°, Dist: 0.02 cm[0m
+[0;32mI (174130) MAIN: Angle: 119°, Dist: 0.02 cm[0m
+[0;32mI (174330) MAIN: Angle: 120°, Dist: 0.02 cm[0m
+[0;33mW (174560) SONAR: Echo end timeout[0m
+[0;32mI (174560) MAIN: Angle: 121°, Dist: -1.00 cm[0m
+[0;33mW (174790) SONAR: Echo end timeout[0m
+[0;32mI (174790) MAIN: Angle: 122°, Dist: -1.00 cm[0m
+[0;33mW (175020) SONAR: Echo end timeout[0m
+[0;32mI (175020) MAIN: Angle: 123°, Dist: -1.00 cm[0m
+[0;32mI (175220) MAIN: Angle: 124°, Dist: 111.41 cm[0m
+[0;32mI (175420) MAIN: Angle: 125°, Dist: 114.42 cm[0m
+[0;33mW (175650) SONAR: Echo start timeout[0m
+[0;32mI (175650) MAIN: Angle: 126°, Dist: -1.00 cm[0m
+[0;33mW (175880) SONAR: Echo start timeout[0m
+[0;32mI (175880) MAIN: Angle: 127°, Dist: -1.00 cm[0m
+[0;33mW (176110) SONAR: Echo start timeout[0m
+[0;32mI (176110) MAIN: Angle: 128°, Dist: -1.00 cm[0m
+[0;33mW (176340) SONAR: Echo start timeout[0m
+[0;32mI (176340) MAIN: Angle: 129°, Dist: -1.00 cm[0m
+[0;33mW (176570) SONAR: Echo start timeout[0m
+[0;32mI (176570) MAIN: Angle: 130°, Dist: -1.00 cm[0m
+[0;33mW (176800) SONAR: Echo start timeout[0m
+[0;32mI (176800) MAIN: Angle: 131°, Dist: -1.00 cm[0m
+[0;33mW (177030) SONAR: Echo start timeout[0m
+[0;32mI (177030) MAIN: Angle: 132°, Dist: -1.00 cm[0m
+[0;33mW (177260) SONAR: Echo start timeout[0m
+[0;32mI (177260) MAIN: Angle: 133°, Dist: -1.00 cm[0m
+[0;33mW (177490) SONAR: Echo start timeout[0m
+[0;32mI (177490) MAIN: Angle: 134°, Dist: -1.00 cm[0m
+[0;33mW (177720) SONAR: Echo start timeout[0m
+[0;32mI (177720) MAIN: Angle: 135°, Dist: -1.00 cm[0m
+[0;33mW (177950) SONAR: Echo start timeout[0m
+[0;32mI (177950) MAIN: Angle: 136°, Dist: -1.00 cm[0m
+[0;32mI (178150) MAIN: Angle: 137°, Dist: 57.14 cm[0m
+[0;32mI (178350) MAIN: Angle: 138°, Dist: 57.56 cm[0m
+[0;32mI (178550) MAIN: Angle: 139°, Dist: 57.14 cm[0m
+[0;32mI (178750) MAIN: Angle: 140°, Dist: 56.13 cm[0m
+[0;33mW (178980) SONAR: Echo end timeout[0m
+[0;32mI (178980) MAIN: Angle: 141°, Dist: -1.00 cm[0m
+[0;32mI (179180) MAIN: Angle: 142°, Dist: 49.70 cm[0m
+[0;32mI (179380) MAIN: Angle: 143°, Dist: 49.67 cm[0m
+[0;32mI (179580) MAIN: Angle: 144°, Dist: 49.67 cm[0m
+[0;32mI (179780) MAIN: Angle: 145°, Dist: 49.67 cm[0m
+[0;32mI (179980) MAIN: Angle: 146°, Dist: 49.70 cm[0m
+[0;32mI (180180) MAIN: Angle: 147°, Dist: 49.68 cm[0m
+[0;32mI (180380) MAIN: Angle: 148°, Dist: 49.67 cm[0m
+[0;33mW (180610) SONAR: Echo end timeout[0m
+[0;32mI (180610) MAIN: Angle: 149°, Dist: -1.00 cm[0m
+[0;32mI (180820) MAIN: Angle: 150°, Dist: 150.71 cm[0m
+[0;32mI (181030) MAIN: Angle: 151°, Dist: 188.55 cm[0m
+[0;32mI (181240) MAIN: Angle: 152°, Dist: 188.48 cm[0m
+[0;33mW (181470) SONAR: Echo end timeout[0m
+[0;32mI (181470) MAIN: Angle: 153°, Dist: -1.00 cm[0m
+[0;33mW (181700) SONAR: Echo end timeout[0m
+[0;32mI (181700) MAIN: Angle: 154°, Dist: -1.00 cm[0m
+[0;33mW (181930) SONAR: Echo end timeout[0m
+[0;32mI (181930) MAIN: Angle: 155°, Dist: -1.00 cm[0m
+[0;33mW (182160) SONAR: Echo end timeout[0m
+[0;32mI (182160) MAIN: Angle: 156°, Dist: -1.00 cm[0m
+[0;33mW (182390) SONAR: Echo end timeout[0m
+[0;32mI (182390) MAIN: Angle: 157°, Dist: -1.00 cm[0m
+[0;33mW (182620) SONAR: Echo end timeout[0m
+[0;32mI (182620) MAIN: Angle: 158°, Dist: -1.00 cm[0m
+[0;32mI (182830) MAIN: Angle: 159°, Dist: 187.48 cm[0m
+[0;32mI (183040) MAIN: Angle: 160°, Dist: 187.09 cm[0m
+[0;32mI (183250) MAIN: Angle: 161°, Dist: 187.64 cm[0m
+[0;32mI (183460) MAIN: Angle: 162°, Dist: 187.16 cm[0m
+[0;32mI (183670) MAIN: Angle: 163°, Dist: 187.38 cm[0m
+[0;32mI (183880) MAIN: Angle: 164°, Dist: 187.33 cm[0m
+[0;32mI (184090) MAIN: Angle: 165°, Dist: 186.95 cm[0m
+[0;32mI (184300) MAIN: Angle: 166°, Dist: 187.35 cm[0m
+[0;32mI (184510) MAIN: Angle: 167°, Dist: 186.92 cm[0m
+[0;32mI (184720) MAIN: Angle: 168°, Dist: 187.31 cm[0m
+[0;32mI (184930) MAIN: Angle: 169°, Dist: 188.05 cm[0m
+[0;32mI (185130) MAIN: Angle: 170°, Dist: 4.25 cm[0m
+[0;32mI (185330) MAIN: Angle: 171°, Dist: 2.66 cm[0m
+[0;32mI (185530) MAIN: Angle: 172°, Dist: 2.01 cm[0m
+[0;32mI (185730) MAIN: Angle: 173°, Dist: 2.33 cm[0m
+[0;32mI (185930) MAIN: Angle: 174°, Dist: 1.68 cm[0m
+[0;32mI (186130) MAIN: Angle: 175°, Dist: 2.66 cm[0m
+[0;32mI (186330) MAIN: Angle: 176°, Dist: 4.60 cm[0m
+[0;32mI (186530) MAIN: Angle: 177°, Dist: 3.94 cm[0m
+[0;32mI (186740) MAIN: Angle: 178°, Dist: 187.48 cm[0m
+[0;32mI (186950) MAIN: Angle: 179°, Dist: 187.48 cm[0m
+[0;32mI (187160) MAIN: Angle: 180°, Dist: 187.11 cm[0m
+[0;32mI (187370) MAIN: Angle: 179°, Dist: 187.12 cm[0m
+[0;32mI (187580) MAIN: Angle: 178°, Dist: 187.12 cm[0m
+[0;32mI (187790) MAIN: Angle: 177°, Dist: 187.12 cm[0m
+[0;32mI (188000) MAIN: Angle: 176°, Dist: 187.57 cm[0m
+[0;32mI (188200) MAIN: Angle: 175°, Dist: 3.60 cm[0m
+[0;32mI (188400) MAIN: Angle: 174°, Dist: 2.30 cm[0m
+[0;32mI (188600) MAIN: Angle: 173°, Dist: 2.98 cm[0m
+[0;32mI (188800) MAIN: Angle: 172°, Dist: 5.23 cm[0m
+[0;32mI (189000) MAIN: Angle: 171°, Dist: 4.61 cm[0m
+[0;33mW (189230) SONAR: Echo end timeout[0m
+[0;32mI (189230) MAIN: Angle: 170°, Dist: -1.00 cm[0m
+[0;32mI (189430) MAIN: Angle: 169°, Dist: 5.90 cm[0m
+[0;32mI (189630) MAIN: Angle: 168°, Dist: 6.84 cm[0m
+[0;32mI (189830) MAIN: Angle: 167°, Dist: 3.94 cm[0m
+[0;32mI (190030) MAIN: Angle: 166°, Dist: 3.94 cm[0m
+[0;32mI (190230) MAIN: Angle: 165°, Dist: 3.94 cm[0m
+[0;33mW (190460) SONAR: Echo end timeout[0m
+[0;32mI (190460) MAIN: Angle: 164°, Dist: -1.00 cm[0m
+[0;32mI (190660) MAIN: Angle: 163°, Dist: 5.23 cm[0m
+[0;32mI (190860) MAIN: Angle: 162°, Dist: 1.99 cm[0m
+[0;32mI (191060) MAIN: Angle: 161°, Dist: 1.66 cm[0m
+[0;32mI (191260) MAIN: Angle: 160°, Dist: 1.66 cm[0m
+[0;32mI (191460) MAIN: Angle: 159°, Dist: 2.98 cm[0m
+[0;32mI (191660) MAIN: Angle: 158°, Dist: 2.33 cm[0m
+[0;32mI (191860) MAIN: Angle: 157°, Dist: 2.62 cm[0m
+[0;32mI (192060) MAIN: Angle: 156°, Dist: 2.98 cm[0m
+[0;32mI (192270) MAIN: Angle: 155°, Dist: 187.55 cm[0m
+[0;32mI (192480) MAIN: Angle: 154°, Dist: 187.59 cm[0m
+[0;32mI (192690) MAIN: Angle: 153°, Dist: 187.59 cm[0m
+[0;32mI (192900) MAIN: Angle: 152°, Dist: 187.19 cm[0m
+[0;32mI (193110) MAIN: Angle: 151°, Dist: 187.18 cm[0m
+[0;32mI (193320) MAIN: Angle: 150°, Dist: 187.19 cm[0m
+[0;32mI (193530) MAIN: Angle: 149°, Dist: 187.64 cm[0m
+[0;32mI (193740) MAIN: Angle: 148°, Dist: 187.64 cm[0m
+[0;32mI (193950) MAIN: Angle: 147°, Dist: 187.64 cm[0m
+[0;32mI (194160) MAIN: Angle: 146°, Dist: 187.64 cm[0m
+[0;32mI (194360) MAIN: Angle: 145°, Dist: 4.25 cm[0m
+[0;32mI (194560) MAIN: Angle: 144°, Dist: 3.28 cm[0m
+[0;32mI (194760) MAIN: Angle: 143°, Dist: 2.66 cm[0m
+[0;32mI (194960) MAIN: Angle: 142°, Dist: 2.01 cm[0m
+[0;32mI (195160) MAIN: Angle: 141°, Dist: 2.62 cm[0m
+[0;32mI (195360) MAIN: Angle: 140°, Dist: 1.99 cm[0m
+[0;32mI (195560) MAIN: Angle: 139°, Dist: 1.99 cm[0m
+[0;32mI (195760) MAIN: Angle: 138°, Dist: 6.88 cm[0m
+[0;32mI (195960) MAIN: Angle: 137°, Dist: 3.31 cm[0m
+[0;32mI (196170) MAIN: Angle: 136°, Dist: 187.62 cm[0m
+[0;32mI (196380) MAIN: Angle: 135°, Dist: 187.21 cm[0m
+[0;32mI (196590) MAIN: Angle: 134°, Dist: 187.24 cm[0m
+[0;32mI (196790) MAIN: Angle: 133°, Dist: 52.07 cm[0m
+[0;32mI (196990) MAIN: Angle: 132°, Dist: 49.86 cm[0m
+[0;32mI (197190) MAIN: Angle: 131°, Dist: 48.76 cm[0m
+[0;32mI (197390) MAIN: Angle: 130°, Dist: 49.86 cm[0m
+[0;32mI (197590) MAIN: Angle: 129°, Dist: 49.51 cm[0m
+[0;32mI (197790) MAIN: Angle: 128°, Dist: 49.53 cm[0m
+[0;32mI (197990) MAIN: Angle: 127°, Dist: 48.74 cm[0m
+[0;32mI (198190) MAIN: Angle: 126°, Dist: 49.53 cm[0m
+[0;32mI (198390) MAIN: Angle: 125°, Dist: 47.75 cm[0m
+[0;32mI (198590) MAIN: Angle: 124°, Dist: 49.49 cm[0m
+[0;32mI (198790) MAIN: Angle: 123°, Dist: 47.93 cm[0m
+[0;32mI (198990) MAIN: Angle: 122°, Dist: 47.73 cm[0m
+[0;32mI (199190) MAIN: Angle: 121°, Dist: 46.32 cm[0m
+[0;32mI (199390) MAIN: Angle: 120°, Dist: 45.76 cm[0m
+[0;32mI (199590) MAIN: Angle: 119°, Dist: 45.14 cm[0m
+[0;32mI (199790) MAIN: Angle: 118°, Dist: 44.54 cm[0m
+[0;32mI (199990) MAIN: Angle: 117°, Dist: 45.33 cm[0m
+[0;32mI (200190) MAIN: Angle: 116°, Dist: 44.32 cm[0m
+[0;32mI (200390) MAIN: Angle: 115°, Dist: 45.14 cm[0m
+[0;32mI (200590) MAIN: Angle: 114°, Dist: 45.36 cm[0m
+[0;32mI (200800) MAIN: Angle: 113°, Dist: 187.59 cm[0m
+[0;32mI (201010) MAIN: Angle: 112°, Dist: 187.23 cm[0m
+[0;32mI (201220) MAIN: Angle: 111°, Dist: 187.60 cm[0m
+[0;32mI (201430) MAIN: Angle: 110°, Dist: 187.66 cm[0m
+[0;32mI (201630) MAIN: Angle: 109°, Dist: 56.58 cm[0m
+[0;32mI (201830) MAIN: Angle: 108°, Dist: 47.15 cm[0m
+[0;32mI (202030) MAIN: Angle: 107°, Dist: 36.50 cm[0m
+[0;32mI (202230) MAIN: Angle: 106°, Dist: 31.14 cm[0m
+[0;32mI (202430) MAIN: Angle: 105°, Dist: 29.31 cm[0m
+[0;32mI (202630) MAIN: Angle: 104°, Dist: 28.49 cm[0m
+[0;32mI (202830) MAIN: Angle: 103°, Dist: 29.33 cm[0m
+[0;32mI (203030) MAIN: Angle: 102°, Dist: 28.79 cm[0m
+[0;32mI (203230) MAIN: Angle: 101°, Dist: 27.34 cm[0m
+[0;32mI (203430) MAIN: Angle: 100°, Dist: 29.31 cm[0m
+[0;32mI (203630) MAIN: Angle: 99°, Dist: 27.63 cm[0m
+[0;32mI (203830) MAIN: Angle: 98°, Dist: 26.72 cm[0m
+[0;32mI (204030) MAIN: Angle: 97°, Dist: 25.28 cm[0m
+[0;32mI (204230) MAIN: Angle: 96°, Dist: 24.71 cm[0m
+[0;32mI (204430) MAIN: Angle: 95°, Dist: 25.86 cm[0m
+[0;32mI (204630) MAIN: Angle: 94°, Dist: 25.28 cm[0m
+[0;32mI (204830) MAIN: Angle: 93°, Dist: 25.59 cm[0m
+[0;32mI (205030) MAIN: Angle: 92°, Dist: 25.86 cm[0m
+[0;32mI (205230) MAIN: Angle: 91°, Dist: 56.32 cm[0m
+[0;32mI (205430) MAIN: Angle: 90°, Dist: 56.17 cm[0m
+[0;32mI (205630) MAIN: Angle: 89°, Dist: 52.74 cm[0m
+[0;32mI (205830) MAIN: Angle: 88°, Dist: 22.67 cm[0m
+[0;32mI (206030) MAIN: Angle: 87°, Dist: 20.48 cm[0m
+[0;32mI (206230) MAIN: Angle: 86°, Dist: 21.73 cm[0m
+[0;32mI (206430) MAIN: Angle: 85°, Dist: 49.34 cm[0m
+[0;32mI (206630) MAIN: Angle: 84°, Dist: 17.25 cm[0m
+[0;32mI (206830) MAIN: Angle: 83°, Dist: 16.00 cm[0m
+[0;32mI (207030) MAIN: Angle: 82°, Dist: 15.98 cm[0m
+[0;32mI (207230) MAIN: Angle: 81°, Dist: 16.29 cm[0m
+[0;32mI (207430) MAIN: Angle: 80°, Dist: 15.35 cm[0m
+[0;32mI (207630) MAIN: Angle: 79°, Dist: 16.96 cm[0m
+[0;32mI (207830) MAIN: Angle: 78°, Dist: 15.31 cm[0m
+[0;32mI (208030) MAIN: Angle: 77°, Dist: 12.93 cm[0m
+[0;32mI (208230) MAIN: Angle: 76°, Dist: 13.60 cm[0m
+[0;32mI (208430) MAIN: Angle: 75°, Dist: 12.95 cm[0m
+[0;32mI (208630) MAIN: Angle: 74°, Dist: 11.90 cm[0m
+[0;32mI (208830) MAIN: Angle: 73°, Dist: 16.65 cm[0m
+[0;32mI (209030) MAIN: Angle: 72°, Dist: 10.19 cm[0m
+[0;32mI (209230) MAIN: Angle: 71°, Dist: 9.50 cm[0m
+[0;32mI (209430) MAIN: Angle: 70°, Dist: 9.86 cm[0m
+[0;32mI (209630) MAIN: Angle: 69°, Dist: 8.47 cm[0m
+[0;32mI (209830) MAIN: Angle: 68°, Dist: 7.85 cm[0m
+[0;32mI (210030) MAIN: Angle: 67°, Dist: 6.88 cm[0m
+[0;32mI (210230) MAIN: Angle: 66°, Dist: 6.53 cm[0m
+[0;32mI (210430) MAIN: Angle: 65°, Dist: 5.88 cm[0m
+[0;32mI (210630) MAIN: Angle: 64°, Dist: 9.18 cm[0m
+[0;32mI (210830) MAIN: Angle: 63°, Dist: 16.31 cm[0m
+[0;32mI (211040) MAIN: Angle: 62°, Dist: 187.31 cm[0m
+[0;32mI (211250) MAIN: Angle: 61°, Dist: 187.31 cm[0m
+[0;32mI (211460) MAIN: Angle: 60°, Dist: 187.36 cm[0m
+[0;32mI (211670) MAIN: Angle: 59°, Dist: 187.38 cm[0m
+[0;32mI (211880) MAIN: Angle: 58°, Dist: 187.42 cm[0m
+[0;32mI (212090) MAIN: Angle: 57°, Dist: 187.38 cm[0m
+[0;32mI (212300) MAIN: Angle: 56°, Dist: 187.42 cm[0m
+[0;32mI (212510) MAIN: Angle: 55°, Dist: 187.48 cm[0m
+[0;32mI (212720) MAIN: Angle: 54°, Dist: 187.45 cm[0m
+[0;32mI (212930) MAIN: Angle: 53°, Dist: 187.52 cm[0m
+[0;32mI (213140) MAIN: Angle: 52°, Dist: 187.48 cm[0m
+[0;32mI (213350) MAIN: Angle: 51°, Dist: 187.50 cm[0m
+[0;32mI (213560) MAIN: Angle: 50°, Dist: 187.54 cm[0m
+[0;32mI (213770) MAIN: Angle: 49°, Dist: 187.64 cm[0m
+[0;32mI (213980) MAIN: Angle: 48°, Dist: 187.60 cm[0m
+[0;32mI (214190) MAIN: Angle: 47°, Dist: 187.67 cm[0m
+[0;32mI (214400) MAIN: Angle: 46°, Dist: 187.76 cm[0m
+[0;32mI (214610) MAIN: Angle: 45°, Dist: 187.36 cm[0m
+[0;32mI (214820) MAIN: Angle: 44°, Dist: 187.74 cm[0m
+[0;32mI (215030) MAIN: Angle: 43°, Dist: 187.31 cm[0m
+[0;32mI (215240) MAIN: Angle: 42°, Dist: 187.74 cm[0m
+[0;32mI (215450) MAIN: Angle: 41°, Dist: 187.36 cm[0m
+[0;32mI (215660) MAIN: Angle: 40°, Dist: 187.78 cm[0m
+[0;32mI (215870) MAIN: Angle: 39°, Dist: 187.81 cm[0m
+[0;32mI (216080) MAIN: Angle: 38°, Dist: 187.74 cm[0m
+[0;32mI (216290) MAIN: Angle: 37°, Dist: 187.74 cm[0m
+[0;32mI (216500) MAIN: Angle: 36°, Dist: 187.71 cm[0m
+[0;32mI (216710) MAIN: Angle: 35°, Dist: 187.67 cm[0m
+[0;32mI (216920) MAIN: Angle: 34°, Dist: 187.76 cm[0m
+[0;32mI (217130) MAIN: Angle: 33°, Dist: 187.72 cm[0m
+[0;32mI (217340) MAIN: Angle: 32°, Dist: 187.74 cm[0m
+[0;32mI (217550) MAIN: Angle: 31°, Dist: 187.76 cm[0m
+[0;32mI (217760) MAIN: Angle: 30°, Dist: 187.74 cm[0m
+[0;32mI (217970) MAIN: Angle: 29°, Dist: 187.72 cm[0m
+[0;32mI (218180) MAIN: Angle: 28°, Dist: 187.74 cm[0m
+[0;32mI (218390) MAIN: Angle: 27°, Dist: 187.74 cm[0m
+[0;32mI (218600) MAIN: Angle: 26°, Dist: 187.71 cm[0m
+[0;32mI (218810) MAIN: Angle: 25°, Dist: 187.74 cm[0m
+[0;32mI (219020) MAIN: Angle: 24°, Dist: 187.71 cm[0m
+[0;32mI (219230) MAIN: Angle: 23°, Dist: 187.76 cm[0m
+[0;32mI (219440) MAIN: Angle: 22°, Dist: 187.74 cm[0m
+[0;32mI (219650) MAIN: Angle: 21°, Dist: 187.74 cm[0m
+[0;32mI (219860) MAIN: Angle: 20°, Dist: 187.74 cm[0m
+[0;32mI (220070) MAIN: Angle: 19°, Dist: 187.40 cm[0m
+[0;32mI (220280) MAIN: Angle: 18°, Dist: 187.40 cm[0m
+[0;32mI (220490) MAIN: Angle: 17°, Dist: 187.38 cm[0m
+[0;32mI (220700) MAIN: Angle: 16°, Dist: 187.76 cm[0m
+[0;32mI (220910) MAIN: Angle: 15°, Dist: 187.36 cm[0m
+[0;32mI (221120) MAIN: Angle: 14°, Dist: 187.59 cm[0m
+[0;32mI (221330) MAIN: Angle: 13°, Dist: 149.87 cm[0m
+[0;32mI (221540) MAIN: Angle: 12°, Dist: 153.63 cm[0m
+[0;32mI (221750) MAIN: Angle: 11°, Dist: 194.29 cm[0m
+[0;32mI (221950) MAIN: Angle: 10°, Dist: 56.30 cm[0m
+[0;33mW (222180) SONAR: Echo end timeout[0m
+[0;32mI (222180) MAIN: Angle: 9°, Dist: -1.00 cm[0m
+[0;33mW (222410) SONAR: Echo end timeout[0m
+[0;32mI (222410) MAIN: Angle: 8°, Dist: -1.00 cm[0m
+[0;33mW (222640) SONAR: Echo end timeout[0m
+[0;32mI (222640) MAIN: Angle: 7°, Dist: -1.00 cm[0m
+[0;33mW (222870) SONAR: Echo end timeout[0m
+[0;32mI (222870) MAIN: Angle: 6°, Dist: -1.00 cm[0m
+[0;33mW (223100) SONAR: Echo end timeout[0m
+[0;32mI (223100) MAIN: Angle: 5°, Dist: -1.00 cm[0m
+[0;33mW (223330) SONAR: Echo end timeout[0m
+[0;32mI (223330) MAIN: Angle: 4°, Dist: -1.00 cm[0m
+[0;33mW (223560) SONAR: Echo end timeout[0m
+[0;32mI (223560) MAIN: Angle: 3°, Dist: -1.00 cm[0m
+[0;33mW (223790) SONAR: Echo end timeout[0m
+[0;32mI (223790) MAIN: Angle: 2°, Dist: -1.00 cm[0m
+[0;33mW (224020) SONAR: Echo end timeout[0m
+[0;32mI (224020) MAIN: Angle: 1°, Dist: -1.00 cm[0m
+[0;33mW (224250) SONAR: Echo end timeout[0m
+[0;32mI (224250) MAIN: Angle: 0°, Dist: -1.00 cm[0m
+[0;33mW (224480) SONAR: Echo end timeout[0m
+[0;32mI (224480) MAIN: Angle: 1°, Dist: -1.00 cm[0m
+[0;33mW (224710) SONAR: Echo end timeout[0m
+[0;32mI (224710) MAIN: Angle: 2°, Dist: -1.00 cm[0m
+[0;33mW (224940) SONAR: Echo end timeout[0m
+[0;32mI (224940) MAIN: Angle: 3°, Dist: -1.00 cm[0m
+[0;33mW (225170) SONAR: Echo end timeout[0m
+[0;32mI (225170) MAIN: Angle: 4°, Dist: -1.00 cm[0m
+[0;33mW (225400) SONAR: Echo end timeout[0m
+[0;32mI (225400) MAIN: Angle: 5°, Dist: -1.00 cm[0m
+[0;33mW (225630) SONAR: Echo end timeout[0m
+[0;32mI (225630) MAIN: Angle: 6°, Dist: -1.00 cm[0m
+[0;33mW (225860) SONAR: Echo end timeout[0m
+[0;32mI (225860) MAIN: Angle: 7°, Dist: -1.00 cm[0m
+[0;33mW (226090) SONAR: Echo end timeout[0m
+[0;32mI (226090) MAIN: Angle: 8°, Dist: -1.00 cm[0m
+[0;33mW (226320) SONAR: Echo end timeout[0m
+[0;32mI (226320) MAIN: Angle: 9°, Dist: -1.00 cm[0m
+[0;33mW (226550) SONAR: Echo end timeout[0m
+[0;32mI (226550) MAIN: Angle: 10°, Dist: -1.00 cm[0m
+[0;33mW (226780) SONAR: Echo end timeout[0m
+[0;32mI (226780) MAIN: Angle: 11°, Dist: -1.00 cm[0m
+[0;33mW (227010) SONAR: Echo end timeout[0m
+[0;32mI (227010) MAIN: Angle: 12°, Dist: -1.00 cm[0m
+[0;33mW (227240) SONAR: Echo end timeout[0m
+[0;32mI (227240) MAIN: Angle: 13°, Dist: -1.00 cm[0m
+[0;33mW (227470) SONAR: Echo end timeout[0m
+[0;32mI (227470) MAIN: Angle: 14°, Dist: -1.00 cm[0m
+[0;33mW (227700) SONAR: Echo end timeout[0m
+[0;32mI (227700) MAIN: Angle: 15°, Dist: -1.00 cm[0m
+[0;33mW (227930) SONAR: Echo end timeout[0m
+[0;32mI (227930) MAIN: Angle: 16°, Dist: -1.00 cm[0m
+[0;33mW (228160) SONAR: Echo end timeout[0m
+[0;32mI (228160) MAIN: Angle: 17°, Dist: -1.00 cm[0m
+[0;33mW (228390) SONAR: Echo end timeout[0m
+[0;32mI (228390) MAIN: Angle: 18°, Dist: -1.00 cm[0m
+[0;33mW (228620) SONAR: Echo end timeout[0m
+[0;32mI (228620) MAIN: Angle: 19°, Dist: -1.00 cm[0m
+[0;33mW (228850) SONAR: Echo end timeout[0m
+[0;32mI (228850) MAIN: Angle: 20°, Dist: -1.00 cm[0m
+[0;33mW (229080) SONAR: Echo end timeout[0m
+[0;32mI (229080) MAIN: Angle: 21°, Dist: -1.00 cm[0m
+[0;33mW (229310) SONAR: Echo end timeout[0m
+[0;32mI (229310) MAIN: Angle: 22°, Dist: -1.00 cm[0m
+[0;33mW (229540) SONAR: Echo end timeout[0m
+[0;32mI (229540) MAIN: Angle: 23°, Dist: -1.00 cm[0m
+[0;33mW (229770) SONAR: Echo end timeout[0m
+[0;32mI (229770) MAIN: Angle: 24°, Dist: -1.00 cm[0m
+[0;33mW (230000) SONAR: Echo end timeout[0m
+[0;32mI (230000) MAIN: Angle: 25°, Dist: -1.00 cm[0m
+[0;33mW (230230) SONAR: Echo end timeout[0m
+[0;32mI (230230) MAIN: Angle: 26°, Dist: -1.00 cm[0m
+[0;33mW (230460) SONAR: Echo end timeout[0m
+[0;32mI (230460) MAIN: Angle: 27°, Dist: -1.00 cm[0m
+[0;33mW (230690) SONAR: Echo end timeout[0m
+[0;32mI (230690) MAIN: Angle: 28°, Dist: -1.00 cm[0m
+[0;33mW (230920) SONAR: Echo end timeout[0m
+[0;32mI (230920) MAIN: Angle: 29°, Dist: -1.00 cm[0m
+[0;33mW (231150) SONAR: Echo end timeout[0m
+[0;32mI (231150) MAIN: Angle: 30°, Dist: -1.00 cm[0m
+[0;33mW (231380) SONAR: Echo end timeout[0m
+[0;32mI (231380) MAIN: Angle: 31°, Dist: -1.00 cm[0m
+[0;33mW (231610) SONAR: Echo end timeout[0m
+[0;32mI (231610) MAIN: Angle: 32°, Dist: -1.00 cm[0m
+[0;33mW (231840) SONAR: Echo end timeout[0m
+[0;32mI (231840) MAIN: Angle: 33°, Dist: -1.00 cm[0m
+[0;33mW (232070) SONAR: Echo end timeout[0m
+[0;32mI (232070) MAIN: Angle: 34°, Dist: -1.00 cm[0m
+[0;33mW (232300) SONAR: Echo end timeout[0m
+[0;32mI (232300) MAIN: Angle: 35°, Dist: -1.00 cm[0m
+[0;33mW (232530) SONAR: Echo end timeout[0m
+[0;32mI (232530) MAIN: Angle: 36°, Dist: -1.00 cm[0m
+[0;33mW (232760) SONAR: Echo end timeout[0m
+[0;32mI (232760) MAIN: Angle: 37°, Dist: -1.00 cm[0m
+[0;33mW (232990) SONAR: Echo end timeout[0m
+[0;32mI (232990) MAIN: Angle: 38°, Dist: -1.00 cm[0m
+[0;33mW (233220) SONAR: Echo end timeout[0m
+[0;32mI (233220) MAIN: Angle: 39°, Dist: -1.00 cm[0m
+[0;33mW (233450) SONAR: Echo end timeout[0m
+[0;32mI (233450) MAIN: Angle: 40°, Dist: -1.00 cm[0m
+[0;33mW (233680) SONAR: Echo end timeout[0m
+[0;32mI (233680) MAIN: Angle: 41°, Dist: -1.00 cm[0m
+[0;33mW (233910) SONAR: Echo end timeout[0m
+[0;32mI (233910) MAIN: Angle: 42°, Dist: -1.00 cm[0m
+[0;33mW (234140) SONAR: Echo end timeout[0m
+[0;32mI (234140) MAIN: Angle: 43°, Dist: -1.00 cm[0m
+[0;33mW (234370) SONAR: Echo end timeout[0m
+[0;32mI (234370) MAIN: Angle: 44°, Dist: -1.00 cm[0m
+[0;33mW (234600) SONAR: Echo end timeout[0m
+[0;32mI (234600) MAIN: Angle: 45°, Dist: -1.00 cm[0m
+[0;33mW (234830) SONAR: Echo end timeout[0m
+[0;32mI (234830) MAIN: Angle: 46°, Dist: -1.00 cm[0m
+[0;33mW (235060) SONAR: Echo end timeout[0m
+[0;32mI (235060) MAIN: Angle: 47°, Dist: -1.00 cm[0m
+[0;33mW (235290) SONAR: Echo end timeout[0m
+[0;32mI (235290) MAIN: Angle: 48°, Dist: -1.00 cm[0m
+[0;33mW (235520) SONAR: Echo end timeout[0m
+[0;32mI (235520) MAIN: Angle: 49°, Dist: -1.00 cm[0m
+[0;33mW (235750) SONAR: Echo end timeout[0m
+[0;32mI (235750) MAIN: Angle: 50°, Dist: -1.00 cm[0m
+[0;33mW (235980) SONAR: Echo end timeout[0m
+[0;32mI (235980) MAIN: Angle: 51°, Dist: -1.00 cm[0m
+[0;33mW (236210) SONAR: Echo end timeout[0m
+[0;32mI (236210) MAIN: Angle: 52°, Dist: -1.00 cm[0m
+[0;33mW (236440) SONAR: Echo end timeout[0m
+[0;32mI (236440) MAIN: Angle: 53°, Dist: -1.00 cm[0m
+[0;33mW (236670) SONAR: Echo end timeout[0m
+[0;32mI (236670) MAIN: Angle: 54°, Dist: -1.00 cm[0m
+[0;33mW (236900) SONAR: Echo end timeout[0m
+[0;32mI (236900) MAIN: Angle: 55°, Dist: -1.00 cm[0m
+[0;33mW (237130) SONAR: Echo end timeout[0m
+[0;32mI (237130) MAIN: Angle: 56°, Dist: -1.00 cm[0m
+[0;33mW (237360) SONAR: Echo end timeout[0m
+[0;32mI (237360) MAIN: Angle: 57°, Dist: -1.00 cm[0m
+[0;33mW (237590) SONAR: Echo end timeout[0m
+[0;32mI (237590) MAIN: Angle: 58°, Dist: -1.00 cm[0m
+[0;33mW (237820) SONAR: Echo end timeout[0m
+[0;32mI (237820) MAIN: Angle: 59°, Dist: -1.00 cm[0m
+[0;33mW (238050) SONAR: Echo end timeout[0m
+[0;32mI (238050) MAIN: Angle: 60°, Dist: -1.00 cm[0m
+[0;33mW (238280) SONAR: Echo end timeout[0m
+[0;32mI (238280) MAIN: Angle: 61°, Dist: -1.00 cm[0m
+[0;33mW (238510) SONAR: Echo end timeout[0m
+[0;32mI (238510) MAIN: Angle: 62°, Dist: -1.00 cm[0m
+[0;33mW (238740) SONAR: Echo end timeout[0m
+[0;32mI (238740) MAIN: Angle: 63°, Dist: -1.00 cm[0m
+[0;33mW (238970) SONAR: Echo end timeout[0m
+[0;32mI (238970) MAIN: Angle: 64°, Dist: -1.00 cm[0m
+[0;33mW (239200) SONAR: Echo end timeout[0m
+[0;32mI (239200) MAIN: Angle: 65°, Dist: -1.00 cm[0m
+[0;33mW (239430) SONAR: Echo end timeout[0m
+[0;32mI (239430) MAIN: Angle: 66°, Dist: -1.00 cm[0m
+[0;33mW (239660) SONAR: Echo end timeout[0m
+[0;32mI (239660) MAIN: Angle: 67°, Dist: -1.00 cm[0m
+[0;33mW (239890) SONAR: Echo end timeout[0m
+[0;32mI (239890) MAIN: Angle: 68°, Dist: -1.00 cm[0m
+[0;33mW (240120) SONAR: Echo end timeout[0m
+[0;32mI (240120) MAIN: Angle: 69°, Dist: -1.00 cm[0m
+[0;33mW (240350) SONAR: Echo end timeout[0m
+[0;32mI (240350) MAIN: Angle: 70°, Dist: -1.00 cm[0m
+[0;33mW (240580) SONAR: Echo end timeout[0m
+[0;32mI (240580) MAIN: Angle: 71°, Dist: -1.00 cm[0m
+[0;33mW (240810) SONAR: Echo end timeout[0m
+[0;32mI (240810) MAIN: Angle: 72°, Dist: -1.00 cm[0m
+[0;33mW (241040) SONAR: Echo end timeout[0m
+[0;32mI (241040) MAIN: Angle: 73°, Dist: -1.00 cm[0m
+[0;33mW (241270) SONAR: Echo end timeout[0m
+[0;32mI (241270) MAIN: Angle: 74°, Dist: -1.00 cm[0m
+[0;33mW (241500) SONAR: Echo end timeout[0m
+[0;32mI (241500) MAIN: Angle: 75°, Dist: -1.00 cm[0m
+[0;33mW (241730) SONAR: Echo end timeout[0m
+[0;32mI (241730) MAIN: Angle: 76°, Dist: -1.00 cm[0m
+[0;33mW (241960) SONAR: Echo end timeout[0m
+[0;32mI (241960) MAIN: Angle: 77°, Dist: -1.00 cm[0m
+[0;33mW (242190) SONAR: Echo end timeout[0m
+[0;32mI (242190) MAIN: Angle: 78°, Dist: -1.00 cm[0m
+[0;33mW (242420) SONAR: Echo end timeout[0m
+[0;32mI (242420) MAIN: Angle: 79°, Dist: -1.00 cm[0m
+[0;33mW (242650) SONAR: Echo end timeout[0m
+[0;32mI (242650) MAIN: Angle: 80°, Dist: -1.00 cm[0m
+[0;33mW (242880) SONAR: Echo end timeout[0m
+[0;32mI (242880) MAIN: Angle: 81°, Dist: -1.00 cm[0m
+[0;33mW (243110) SONAR: Echo end timeout[0m
+[0;32mI (243110) MAIN: Angle: 82°, Dist: -1.00 cm[0m
+[0;33mW (243340) SONAR: Echo end timeout[0m
+[0;32mI (243340) MAIN: Angle: 83°, Dist: -1.00 cm[0m
+[0;33mW (243570) SONAR: Echo end timeout[0m
+[0;32mI (243570) MAIN: Angle: 84°, Dist: -1.00 cm[0m
+[0;33mW (243800) SONAR: Echo end timeout[0m
+[0;32mI (243800) MAIN: Angle: 85°, Dist: -1.00 cm[0m
+[0;33mW (244030) SONAR: Echo end timeout[0m
+[0;32mI (244030) MAIN: Angle: 86°, Dist: -1.00 cm[0m
+[0;33mW (244260) SONAR: Echo end timeout[0m
+[0;32mI (244260) MAIN: Angle: 87°, Dist: -1.00 cm[0m
+[0;33mW (244490) SONAR: Echo end timeout[0m
+[0;32mI (244490) MAIN: Angle: 88°, Dist: -1.00 cm[0m
+[0;33mW (244720) SONAR: Echo end timeout[0m
+[0;32mI (244720) MAIN: Angle: 89°, Dist: -1.00 cm[0m
+[0;33mW (244950) SONAR: Echo end timeout[0m
+[0;32mI (244950) MAIN: Angle: 90°, Dist: -1.00 cm[0m
+[0;33mW (245180) SONAR: Echo end timeout[0m
+[0;32mI (245180) MAIN: Angle: 91°, Dist: -1.00 cm[0m
+[0;33mW (245410) SONAR: Echo end timeout[0m
+[0;32mI (245410) MAIN: Angle: 92°, Dist: -1.00 cm[0m
+[0;33mW (245640) SONAR: Echo end timeout[0m
+[0;32mI (245640) MAIN: Angle: 93°, Dist: -1.00 cm[0m
+[0;33mW (245870) SONAR: Echo end timeout[0m
+[0;32mI (245870) MAIN: Angle: 94°, Dist: -1.00 cm[0m
+[0;33mW (246100) SONAR: Echo end timeout[0m
+[0;32mI (246100) MAIN: Angle: 95°, Dist: -1.00 cm[0m
+[0;33mW (246330) SONAR: Echo end timeout[0m
+[0;32mI (246330) MAIN: Angle: 96°, Dist: -1.00 cm[0m
+[0;33mW (246560) SONAR: Echo end timeout[0m
+[0;32mI (246560) MAIN: Angle: 97°, Dist: -1.00 cm[0m
+[0;33mW (246790) SONAR: Echo end timeout[0m
+[0;32mI (246790) MAIN: Angle: 98°, Dist: -1.00 cm[0m
+[0;33mW (247020) SONAR: Echo end timeout[0m
+[0;32mI (247020) MAIN: Angle: 99°, Dist: -1.00 cm[0m
+[0;33mW (247250) SONAR: Echo end timeout[0m
+[0;32mI (247250) MAIN: Angle: 100°, Dist: -1.00 cm[0m
+[0;33mW (247480) SONAR: Echo end timeout[0m
+[0;32mI (247480) MAIN: Angle: 101°, Dist: -1.00 cm[0m
+[0;33mW (247710) SONAR: Echo end timeout[0m
+[0;32mI (247710) MAIN: Angle: 102°, Dist: -1.00 cm[0m
+[0;33mW (247940) SONAR: Echo end timeout[0m
+[0;32mI (247940) MAIN: Angle: 103°, Dist: -1.00 cm[0m
+[0;33mW (248170) SONAR: Echo end timeout[0m
+[0;32mI (248170) MAIN: Angle: 104°, Dist: -1.00 cm[0m
+[0;33mW (248400) SONAR: Echo end timeout[0m
+[0;32mI (248400) MAIN: Angle: 105°, Dist: -1.00 cm[0m
+[0;33mW (248630) SONAR: Echo end timeout[0m
+[0;32mI (248630) MAIN: Angle: 106°, Dist: -1.00 cm[0m
+[0;33mW (248860) SONAR: Echo end timeout[0m
+[0;32mI (248860) MAIN: Angle: 107°, Dist: -1.00 cm[0m
+[0;33mW (249090) SONAR: Echo end timeout[0m
+[0;32mI (249090) MAIN: Angle: 108°, Dist: -1.00 cm[0m
+[0;33mW (249320) SONAR: Echo end timeout[0m
+[0;32mI (249320) MAIN: Angle: 109°, Dist: -1.00 cm[0m
+[0;33mW (249550) SONAR: Echo end timeout[0m
+[0;32mI (249550) MAIN: Angle: 110°, Dist: -1.00 cm[0m
+[0;33mW (249780) SONAR: Echo end timeout[0m
+[0;32mI (249780) MAIN: Angle: 111°, Dist: -1.00 cm[0m
+[0;33mW (250010) SONAR: Echo end timeout[0m
+[0;32mI (250010) MAIN: Angle: 112°, Dist: -1.00 cm[0m
+[0;33mW (250240) SONAR: Echo end timeout[0m
+[0;32mI (250240) MAIN: Angle: 113°, Dist: -1.00 cm[0m
+[0;33mW (250470) SONAR: Echo end timeout[0m
+[0;32mI (250470) MAIN: Angle: 114°, Dist: -1.00 cm[0m
+[0;33mW (250700) SONAR: Echo end timeout[0m
+[0;32mI (250700) MAIN: Angle: 115°, Dist: -1.00 cm[0m
+[0;33mW (250930) SONAR: Echo end timeout[0m
+[0;32mI (250930) MAIN: Angle: 116°, Dist: -1.00 cm[0m
+[0;33mW (251160) SONAR: Echo end timeout[0m
+[0;32mI (251160) MAIN: Angle: 117°, Dist: -1.00 cm[0m
+[0;33mW (251390) SONAR: Echo end timeout[0m
+[0;32mI (251390) MAIN: Angle: 118°, Dist: -1.00 cm[0m
+[0;33mW (251620) SONAR: Echo end timeout[0m
+[0;32mI (251620) MAIN: Angle: 119°, Dist: -1.00 cm[0m
+[0;33mW (251850) SONAR: Echo end timeout[0m
+[0;32mI (251850) MAIN: Angle: 120°, Dist: -1.00 cm[0m
+[0;33mW (252080) SONAR: Echo end timeout[0m
+[0;32mI (252080) MAIN: Angle: 121°, Dist: -1.00 cm[0m
+[0;33mW (252310) SONAR: Echo end timeout[0m
+[0;32mI (252310) MAIN: Angle: 122°, Dist: -1.00 cm[0m
+[0;33mW (252540) SONAR: Echo end timeout[0m
+[0;32mI (252540) MAIN: Angle: 123°, Dist: -1.00 cm[0m
+[0;33mW (252770) SONAR: Echo end timeout[0m
+[0;32mI (252770) MAIN: Angle: 124°, Dist: -1.00 cm[0m
+[0;33mW (253000) SONAR: Echo end timeout[0m
+[0;32mI (253000) MAIN: Angle: 125°, Dist: -1.00 cm[0m
+[0;33mW (253230) SONAR: Echo end timeout[0m
+[0;32mI (253230) MAIN: Angle: 126°, Dist: -1.00 cm[0m
+[0;33mW (253460) SONAR: Echo end timeout[0m
+[0;32mI (253460) MAIN: Angle: 127°, Dist: -1.00 cm[0m
+[0;33mW (253690) SONAR: Echo end timeout[0m
+[0;32mI (253690) MAIN: Angle: 128°, Dist: -1.00 cm[0m
+[0;33mW (253920) SONAR: Echo end timeout[0m
+[0;32mI (253920) MAIN: Angle: 129°, Dist: -1.00 cm[0m
+[0;33mW (254150) SONAR: Echo end timeout[0m
+[0;32mI (254150) MAIN: Angle: 130°, Dist: -1.00 cm[0m
+[0;33mW (254380) SONAR: Echo end timeout[0m
+[0;32mI (254380) MAIN: Angle: 131°, Dist: -1.00 cm[0m
+[0;33mW (254610) SONAR: Echo end timeout[0m
+[0;32mI (254610) MAIN: Angle: 132°, Dist: -1.00 cm[0m
+[0;33mW (254840) SONAR: Echo end timeout[0m
+[0;32mI (254840) MAIN: Angle: 133°, Dist: -1.00 cm[0m
+[0;33mW (255070) SONAR: Echo end timeout[0m
+[0;32mI (255070) MAIN: Angle: 134°, Dist: -1.00 cm[0m
+[0;33mW (255300) SONAR: Echo end timeout[0m
+[0;32mI (255300) MAIN: Angle: 135°, Dist: -1.00 cm[0m
+[0;33mW (255530) SONAR: Echo end timeout[0m
+[0;32mI (255530) MAIN: Angle: 136°, Dist: -1.00 cm[0m
+[0;33mW (255760) SONAR: Echo end timeout[0m
+[0;32mI (255760) MAIN: Angle: 137°, Dist: -1.00 cm[0m
+[0;33mW (255990) SONAR: Echo end timeout[0m
+[0;32mI (255990) MAIN: Angle: 138°, Dist: -1.00 cm[0m
+[0;33mW (256220) SONAR: Echo end timeout[0m
+[0;32mI (256220) MAIN: Angle: 139°, Dist: -1.00 cm[0m
+[0;33mW (256450) SONAR: Echo end timeout[0m
+[0;32mI (256450) MAIN: Angle: 140°, Dist: -1.00 cm[0m
+[0;33mW (256680) SONAR: Echo end timeout[0m
+[0;32mI (256680) MAIN: Angle: 141°, Dist: -1.00 cm[0m
+[0;33mW (256910) SONAR: Echo end timeout[0m
+[0;32mI (256910) MAIN: Angle: 142°, Dist: -1.00 cm[0m
+[0;33mW (257140) SONAR: Echo end timeout[0m
+[0;32mI (257140) MAIN: Angle: 143°, Dist: -1.00 cm[0m
+[0;33mW (257370) SONAR: Echo end timeout[0m
+[0;32mI (257370) MAIN: Angle: 144°, Dist: -1.00 cm[0m
+[0;33mW (257600) SONAR: Echo end timeout[0m
+[0;32mI (257600) MAIN: Angle: 145°, Dist: -1.00 cm[0m
+[0;33mW (257830) SONAR: Echo end timeout[0m
+[0;32mI (257830) MAIN: Angle: 146°, Dist: -1.00 cm[0m
+[0;33mW (258060) SONAR: Echo end timeout[0m
+[0;32mI (258060) MAIN: Angle: 147°, Dist: -1.00 cm[0m
+[0;33mW (258290) SONAR: Echo end timeout[0m
+[0;32mI (258290) MAIN: Angle: 148°, Dist: -1.00 cm[0m
+[0;33mW (258520) SONAR: Echo end timeout[0m
+[0;32mI (258520) MAIN: Angle: 149°, Dist: -1.00 cm[0m
+[0;33mW (258750) SONAR: Echo end timeout[0m
+[0;32mI (258750) MAIN: Angle: 150°, Dist: -1.00 cm[0m
+[0;33mW (258980) SONAR: Echo end timeout[0m
+[0;32mI (258980) MAIN: Angle: 151°, Dist: -1.00 cm[0m
+[0;33mW (259210) SONAR: Echo end timeout[0m
+[0;32mI (259210) MAIN: Angle: 152°, Dist: -1.00 cm[0m
+[0;33mW (259440) SONAR: Echo end timeout[0m
+[0;32mI (259440) MAIN: Angle: 153°, Dist: -1.00 cm[0m
+[0;33mW (259670) SONAR: Echo end timeout[0m
+[0;32mI (259670) MAIN: Angle: 154°, Dist: -1.00 cm[0m
+[0;33mW (259900) SONAR: Echo end timeout[0m
+[0;32mI (259900) MAIN: Angle: 155°, Dist: -1.00 cm[0m
+[0;33mW (260130) SONAR: Echo end timeout[0m
+[0;32mI (260130) MAIN: Angle: 156°, Dist: -1.00 cm[0m
+[0;33mW (260360) SONAR: Echo end timeout[0m
+[0;32mI (260360) MAIN: Angle: 157°, Dist: -1.00 cm[0m
+[0;33mW (260590) SONAR: Echo end timeout[0m
+[0;32mI (260590) MAIN: Angle: 158°, Dist: -1.00 cm[0m
+[0;33mW (260820) SONAR: Echo end timeout[0m
+[0;32mI (260820) MAIN: Angle: 159°, Dist: -1.00 cm[0m
+[0;33mW (261050) SONAR: Echo end timeout[0m
+[0;32mI (261050) MAIN: Angle: 160°, Dist: -1.00 cm[0m
+[0;33mW (261280) SONAR: Echo end timeout[0m
+[0;32mI (261280) MAIN: Angle: 161°, Dist: -1.00 cm[0m
+[0;33mW (261510) SONAR: Echo end timeout[0m
+[0;32mI (261510) MAIN: Angle: 162°, Dist: -1.00 cm[0m
+[0;33mW (261740) SONAR: Echo end timeout[0m
+[0;32mI (261740) MAIN: Angle: 163°, Dist: -1.00 cm[0m
+[0;33mW (261970) SONAR: Echo end timeout[0m
+[0;32mI (261970) MAIN: Angle: 164°, Dist: -1.00 cm[0m
+[0;33mW (262200) SONAR: Echo end timeout[0m
+[0;32mI (262200) MAIN: Angle: 165°, Dist: -1.00 cm[0m
+[0;33mW (262430) SONAR: Echo end timeout[0m
+[0;32mI (262430) MAIN: Angle: 166°, Dist: -1.00 cm[0m
+[0;33mW (262660) SONAR: Echo end timeout[0m
+[0;32mI (262660) MAIN: Angle: 167°, Dist: -1.00 cm[0m
+[0;33mW (262890) SONAR: Echo end timeout[0m
+[0;32mI (262890) MAIN: Angle: 168°, Dist: -1.00 cm[0m
+[0;33mW (263120) SONAR: Echo end timeout[0m
+[0;32mI (263120) MAIN: Angle: 169°, Dist: -1.00 cm[0m
+[0;33mW (263350) SONAR: Echo end timeout[0m
+[0;32mI (263350) MAIN: Angle: 170°, Dist: -1.00 cm[0m
+[0;33mW (263580) SONAR: Echo end timeout[0m
+[0;32mI (263580) MAIN: Angle: 171°, Dist: -1.00 cm[0m
+[0;33mW (263810) SONAR: Echo end timeout[0m
+[0;32mI (263810) MAIN: Angle: 172°, Dist: -1.00 cm[0m
+[0;33mW (264040) SONAR: Echo end timeout[0m
+[0;32mI (264040) MAIN: Angle: 173°, Dist: -1.00 cm[0m
+[0;33mW (264270) SONAR: Echo end timeout[0m
+[0;32mI (264270) MAIN: Angle: 174°, Dist: -1.00 cm[0m
+[0;33mW (264500) SONAR: Echo end timeout[0m
+[0;32mI (264500) MAIN: Angle: 175°, Dist: -1.00 cm[0m
+[0;33mW (264730) SONAR: Echo end timeout[0m
+[0;32mI (264730) MAIN: Angle: 176°, Dist: -1.00 cm[0m
+[0;33mW (264960) SONAR: Echo end timeout[0m
+[0;32mI (264960) MAIN: Angle: 177°, Dist: -1.00 cm[0m
+[0;33mW (265190) SONAR: Echo end timeout[0m
+[0;32mI (265190) MAIN: Angle: 178°, Dist: -1.00 cm[0m
+[0;33mW (265420) SONAR: Echo end timeout[0m
+[0;32mI (265420) MAIN: Angle: 179°, Dist: -1.00 cm[0m
+[0;33mW (265650) SONAR: Echo end timeout[0m
+[0;32mI (265650) MAIN: Angle: 180°, Dist: -1.00 cm[0m
+[0;33mW (265880) SONAR: Echo end timeout[0m
+[0;32mI (265880) MAIN: Angle: 179°, Dist: -1.00 cm[0m
+[0;32mI (266090) MAIN: Angle: 178°, Dist: 239.07 cm[0m
+[0;33mW (266320) SONAR: Echo end timeout[0m
+[0;32mI (266320) MAIN: Angle: 177°, Dist: -1.00 cm[0m
+[0;33mW (266550) SONAR: Echo end timeout[0m
+[0;32mI (266550) MAIN: Angle: 176°, Dist: -1.00 cm[0m
+[0;33mW (266780) SONAR: Echo end timeout[0m
+[0;32mI (266780) MAIN: Angle: 175°, Dist: -1.00 cm[0m
+[0;33mW (267010) SONAR: Echo end timeout[0m
+[0;32mI (267010) MAIN: Angle: 174°, Dist: -1.00 cm[0m
+[0;33mW (267240) SONAR: Echo end timeout[0m
+[0;32mI (267240) MAIN: Angle: 173°, Dist: -1.00 cm[0m
+[0;33mW (267470) SONAR: Echo end timeout[0m
+[0;32mI (267470) MAIN: Angle: 172°, Dist: -1.00 cm[0m
+[0;33mW (267700) SONAR: Echo end timeout[0m
+[0;32mI (267700) MAIN: Angle: 171°, Dist: -1.00 cm[0m
+[0;33mW (267930) SONAR: Echo end timeout[0m
+[0;32mI (267930) MAIN: Angle: 170°, Dist: -1.00 cm[0m
+[0;33mW (268160) SONAR: Echo end timeout[0m
+[0;32mI (268160) MAIN: Angle: 169°, Dist: -1.00 cm[0m
+[0;33mW (268390) SONAR: Echo end timeout[0m
+[0;32mI (268390) MAIN: Angle: 168°, Dist: -1.00 cm[0m
+[0;33mW (268620) SONAR: Echo end timeout[0m
+[0;32mI (268620) MAIN: Angle: 167°, Dist: -1.00 cm[0m
+[0;33mW (268850) SONAR: Echo end timeout[0m
+[0;32mI (268850) MAIN: Angle: 166°, Dist: -1.00 cm[0m
+[0;33mW (269080) SONAR: Echo end timeout[0m
+[0;32mI (269080) MAIN: Angle: 165°, Dist: -1.00 cm[0m
+[0;33mW (269310) SONAR: Echo end timeout[0m
+[0;32mI (269310) MAIN: Angle: 164°, Dist: -1.00 cm[0m
+[0;33mW (269540) SONAR: Echo end timeout[0m
+[0;32mI (269540) MAIN: Angle: 163°, Dist: -1.00 cm[0m
+[0;33mW (269770) SONAR: Echo end timeout[0m
+[0;32mI (269770) MAIN: Angle: 162°, Dist: -1.00 cm[0m
+[0;33mW (270000) SONAR: Echo end timeout[0m
+[0;32mI (270000) MAIN: Angle: 161°, Dist: -1.00 cm[0m
+[0;33mW (270230) SONAR: Echo end timeout[0m
+[0;32mI (270230) MAIN: Angle: 160°, Dist: -1.00 cm[0m
+[0;33mW (270460) SONAR: Echo end timeout[0m
+[0;32mI (270460) MAIN: Angle: 159°, Dist: -1.00 cm[0m
+[0;33mW (270690) SONAR: Echo end timeout[0m
+[0;32mI (270690) MAIN: Angle: 158°, Dist: -1.00 cm[0m
+[0;33mW (270920) SONAR: Echo end timeout[0m
+[0;32mI (270920) MAIN: Angle: 157°, Dist: -1.00 cm[0m
+[0;33mW (271150) SONAR: Echo end timeout[0m
+[0;32mI (271150) MAIN: Angle: 156°, Dist: -1.00 cm[0m
+[0;33mW (271380) SONAR: Echo end timeout[0m
+[0;32mI (271380) MAIN: Angle: 155°, Dist: -1.00 cm[0m
+[0;33mW (271610) SONAR: Echo end timeout[0m
+[0;32mI (271610) MAIN: Angle: 154°, Dist: -1.00 cm[0m
+[0;33mW (271840) SONAR: Echo end timeout[0m
+[0;32mI (271840) MAIN: Angle: 153°, Dist: -1.00 cm[0m
+[0;33mW (272070) SONAR: Echo end timeout[0m
+[0;32mI (272070) MAIN: Angle: 152°, Dist: -1.00 cm[0m
+[0;33mW (272300) SONAR: Echo end timeout[0m
+[0;32mI (272300) MAIN: Angle: 151°, Dist: -1.00 cm[0m
+[0;33mW (272530) SONAR: Echo end timeout[0m
+[0;32mI (272530) MAIN: Angle: 150°, Dist: -1.00 cm[0m
+[0;33mW (272760) SONAR: Echo end timeout[0m
+[0;32mI (272760) MAIN: Angle: 149°, Dist: -1.00 cm[0m
+[0;33mW (272990) SONAR: Echo end timeout[0m
+[0;32mI (272990) MAIN: Angle: 148°, Dist: -1.00 cm[0m
+[0;33mW (273220) SONAR: Echo end timeout[0m
+[0;32mI (273220) MAIN: Angle: 147°, Dist: -1.00 cm[0m
+[0;33mW (273450) SONAR: Echo end timeout[0m
+[0;32mI (273450) MAIN: Angle: 146°, Dist: -1.00 cm[0m
+[0;33mW (273680) SONAR: Echo end timeout[0m
+[0;32mI (273680) MAIN: Angle: 145°, Dist: -1.00 cm[0m
+[0;33mW (273910) SONAR: Echo end timeout[0m
+[0;32mI (273910) MAIN: Angle: 144°, Dist: -1.00 cm[0m
+[0;33mW (274140) SONAR: Echo end timeout[0m
+[0;32mI (274140) MAIN: Angle: 143°, Dist: -1.00 cm[0m
+[0;33mW (274370) SONAR: Echo end timeout[0m
+[0;32mI (274370) MAIN: Angle: 142°, Dist: -1.00 cm[0m
+[0;33mW (274600) SONAR: Echo end timeout[0m
+[0;32mI (274600) MAIN: Angle: 141°, Dist: -1.00 cm[0m
+[0;33mW (274830) SONAR: Echo end timeout[0m
+[0;32mI (274830) MAIN: Angle: 140°, Dist: -1.00 cm[0m
+[0;33mW (275060) SONAR: Echo end timeout[0m
+[0;32mI (275060) MAIN: Angle: 139°, Dist: -1.00 cm[0m
+[0;33mW (275290) SONAR: Echo end timeout[0m
+[0;32mI (275290) MAIN: Angle: 138°, Dist: -1.00 cm[0m
+[0;33mW (275520) SONAR: Echo end timeout[0m
+[0;32mI (275520) MAIN: Angle: 137°, Dist: -1.00 cm[0m
+[0;33mW (275750) SONAR: Echo end timeout[0m
+[0;32mI (275750) MAIN: Angle: 136°, Dist: -1.00 cm[0m
+[0;33mW (275980) SONAR: Echo end timeout[0m
+[0;32mI (275980) MAIN: Angle: 135°, Dist: -1.00 cm[0m
+[0;33mW (276210) SONAR: Echo end timeout[0m
+[0;32mI (276210) MAIN: Angle: 134°, Dist: -1.00 cm[0m
+[0;33mW (276440) SONAR: Echo end timeout[0m
+[0;32mI (276440) MAIN: Angle: 133°, Dist: -1.00 cm[0m
+[0;33mW (276670) SONAR: Echo end timeout[0m
+[0;32mI (276670) MAIN: Angle: 132°, Dist: -1.00 cm[0m
+[0;33mW (276900) SONAR: Echo end timeout[0m
+[0;32mI (276900) MAIN: Angle: 131°, Dist: -1.00 cm[0m
+[0;33mW (277130) SONAR: Echo end timeout[0m
+[0;32mI (277130) MAIN: Angle: 130°, Dist: -1.00 cm[0m
+[0;33mW (277360) SONAR: Echo end timeout[0m
+[0;32mI (277360) MAIN: Angle: 129°, Dist: -1.00 cm[0m
+[0;33mW (277590) SONAR: Echo end timeout[0m
+[0;32mI (277590) MAIN: Angle: 128°, Dist: -1.00 cm[0m
+[0;33mW (277820) SONAR: Echo end timeout[0m
+[0;32mI (277820) MAIN: Angle: 127°, Dist: -1.00 cm[0m
+[0;33mW (278050) SONAR: Echo end timeout[0m
+[0;32mI (278050) MAIN: Angle: 126°, Dist: -1.00 cm[0m
+[0;33mW (278280) SONAR: Echo end timeout[0m
+[0;32mI (278280) MAIN: Angle: 125°, Dist: -1.00 cm[0m
+[0;33mW (278510) SONAR: Echo end timeout[0m
+[0;32mI (278510) MAIN: Angle: 124°, Dist: -1.00 cm[0m
+[0;33mW (278740) SONAR: Echo end timeout[0m
+[0;32mI (278740) MAIN: Angle: 123°, Dist: -1.00 cm[0m
+[0;33mW (278970) SONAR: Echo end timeout[0m
+[0;32mI (278970) MAIN: Angle: 122°, Dist: -1.00 cm[0m
+[0;33mW (279200) SONAR: Echo end timeout[0m
+[0;32mI (279200) MAIN: Angle: 121°, Dist: -1.00 cm[0m
+[0;33mW (279430) SONAR: Echo end timeout[0m
+[0;32mI (279430) MAIN: Angle: 120°, Dist: -1.00 cm[0m
+[0;33mW (279660) SONAR: Echo end timeout[0m
+[0;32mI (279660) MAIN: Angle: 119°, Dist: -1.00 cm[0m
+[0;33mW (279890) SONAR: Echo end timeout[0m
+[0;32mI (279890) MAIN: Angle: 118°, Dist: -1.00 cm[0m
+[0;33mW (280120) SONAR: Echo end timeout[0m
+[0;32mI (280120) MAIN: Angle: 117°, Dist: -1.00 cm[0m
+[0;33mW (280350) SONAR: Echo end timeout[0m
+[0;32mI (280350) MAIN: Angle: 116°, Dist: -1.00 cm[0m
+[0;33mW (280580) SONAR: Echo end timeout[0m
+[0;32mI (280580) MAIN: Angle: 115°, Dist: -1.00 cm[0m
+[0;33mW (280810) SONAR: Echo end timeout[0m
+[0;32mI (280810) MAIN: Angle: 114°, Dist: -1.00 cm[0m
+[0;33mW (281040) SONAR: Echo end timeout[0m
+[0;32mI (281040) MAIN: Angle: 113°, Dist: -1.00 cm[0m
+[0;33mW (281270) SONAR: Echo end timeout[0m
+[0;32mI (281270) MAIN: Angle: 112°, Dist: -1.00 cm[0m
+[0;33mW (281500) SONAR: Echo end timeout[0m
+[0;32mI (281500) MAIN: Angle: 111°, Dist: -1.00 cm[0m
+[0;33mW (281730) SONAR: Echo end timeout[0m
+[0;32mI (281730) MAIN: Angle: 110°, Dist: -1.00 cm[0m
+[0;33mW (281960) SONAR: Echo end timeout[0m
+[0;32mI (281960) MAIN: Angle: 109°, Dist: -1.00 cm[0m
+[0;33mW (282190) SONAR: Echo end timeout[0m
+[0;32mI (282190) MAIN: Angle: 108°, Dist: -1.00 cm[0m
+[0;33mW (282420) SONAR: Echo end timeout[0m
+[0;32mI (282420) MAIN: Angle: 107°, Dist: -1.00 cm[0m
+[0;33mW (282650) SONAR: Echo end timeout[0m
+[0;32mI (282650) MAIN: Angle: 106°, Dist: -1.00 cm[0m
+[0;33mW (282880) SONAR: Echo end timeout[0m
+[0;32mI (282880) MAIN: Angle: 105°, Dist: -1.00 cm[0m
+[0;33mW (283110) SONAR: Echo end timeout[0m
+[0;32mI (283110) MAIN: Angle: 104°, Dist: -1.00 cm[0m
+[0;33mW (283340) SONAR: Echo end timeout[0m
+[0;32mI (283340) MAIN: Angle: 103°, Dist: -1.00 cm[0m
+[0;33mW (283570) SONAR: Echo end timeout[0m
+[0;32mI (283570) MAIN: Angle: 102°, Dist: -1.00 cm[0m

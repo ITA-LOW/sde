@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/italo/esp/projetos/teste_servo_2/build/CMakeFiles/bootloader
+/home/italo/esp/projetos/teste_servo_2/build/CMakeFiles/bootloader.rule
+/home/italo/esp/projetos/teste_servo_2/build/CMakeFiles/bootloader-complete.rule
+/home/italo/esp/projetos/teste_servo_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/italo/esp/projetos/teste_servo_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/italo/esp/projetos/teste_servo_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/italo/esp/projetos/teste_servo_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/italo/esp/projetos/teste_servo_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/italo/esp/projetos/teste_servo_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/italo/esp/projetos/teste_servo_2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
